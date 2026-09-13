@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gig Chordbook</title>
+<style>
+:root{
+  color-scheme: light dark;
+  --bg:#faf7f2; --panel:#ffffff; --ink:#2b241c; --ink-soft:#6b6156;
+  --line:#e4dccc; --accent:#a15c2f; --accent-ink:#ffffff; --accent-soft:#f1e2d2;
+  --danger:#b5432f; --shadow:0 1px 3px rgba(60,40,10,0.08), 0 1px 2px rgba(60,40,10,0.06);
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1c1712; --panel:#26201a; --ink:#f1e9dd; --ink-soft:#b8ab99;
+    --line:#3c3226; --accent:#e0925a; --accent-ink:#241a10; --accent-soft:#3a2c1d;
+    --danger:#e0725a; --shadow:0 1px 3px rgba(0,0,0,0.35);
+  }
+}
+*{box-sizing:border-box;}
+html,body{margin:0; padding:0;}
+body{
+  background:var(--bg); color:var(--ink); font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  padding:16px;
+}
+h1,h2,h3{margin:0 0 8px 0;}
+.app-header{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px;}
+.app-header h1{font-size:1.4rem;}
+.app-header p{margin:2px 0 0; color:var(--ink-soft); font-size:0.85rem;}
+.status-pill{font-size:0.75rem; color:var(--ink-soft); background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 10px; white-space:nowrap;}
+
+.layout{display:grid; grid-template-columns: minmax(260px,1fr) minmax(300px,1.2fr); gap:16px; align-items:start;}
+@media (max-width: 780px){ .layout{grid-template-columns: 1fr;} }
+
+.panel{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:14px;}
+.panel-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:10px;}
+.panel-head h2{font-size:1.05rem;}
+
+input[type=text], textarea, select{
+  width:100%; font-family:inherit; font-size:0.9rem; color:var(--ink);
+  background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:7px 9px;
+}
+textarea{resize:vertical;}
+button{
+  font-family:inherit; font-size:0.85rem; cursor:pointer; border-radius:6px; border:1px solid var(--line);
+  background:var(--panel); color:var(--ink); padding:6px 10px;
+}
+button:hover{border-color:var(--accent);}
+button.primary{background:var(--accent); color:var(--accent-ink); border-color:var(--accent); font-weight:600;}
+button.primary:hover{opacity:0.92;}
+button.danger{color:var(--danger); border-color:var(--danger);}
+button.subtle{background:transparent; border-color:transparent; color:var(--ink-soft); padding:4px 6px;}
+button.subtle:hover{color:var(--accent); border-color:var(--line);}
+button:disabled{opacity:0.45; cursor:not-allowed;}
+.btn-row{display:flex; gap:6px; flex-wrap:wrap;}
+
+.search-row{margin-bottom:10px;}
+
+.song-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; max-height:60vh; overflow:auto;}
+.song-row{display:flex; align-items:center; gap:8px; border:1px solid var(--line); border-radius:8px; padding:8px 10px; background:var(--bg);}
+.song-row .title{flex:1; font-weight:600; font-size:0.92rem;}
+.song-row .meta{font-size:0.75rem; color:var(--ink-soft);}
+.empty-note{color:var(--ink-soft); font-size:0.85rem; padding:8px 2px;}
+
+.setlist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; min-height:60px;}
+.setlist-row{display:flex; align-items:center; gap:8px; border:1px solid var(--line); border-radius:8px; padding:8px 10px; background:var(--bg); cursor:grab;}
+.setlist-row.dragging{opacity:0.4;}
+.setlist-row .num{width:22px; text-align:right; color:var(--ink-soft); font-variant-numeric:tabular-nums; font-size:0.85rem;}
+.setlist-row .title{flex:1; font-size:0.92rem; font-weight:600;}
+.setlist-row .handle{color:var(--ink-soft); cursor:grab; padding:0 4px; user-select:none;}
+.drop-marker{height:2px; background:var(--accent); border-radius:2px; margin:0 4px;}
+
+.setlist-actions{display:flex; gap:6px; flex-wrap:wrap; margin-top:12px; border-top:1px solid var(--line); padding-top:12px;}
+
+.data-tools{border:1px solid var(--line); border-radius:8px; padding:10px; background:var(--bg); margin-bottom:12px;}
+
+dialog{
+  border:1px solid var(--line); border-radius:var(--radius); padding:0; width:min(960px,95vw);
+  color:var(--ink); background:var(--panel); box-shadow:0 8px 30px rgba(0,0,0,0.25);
+}
+dialog::backdrop{background:rgba(20,15,8,0.45);}
+.dialog-body{padding:18px; max-height:82vh; overflow:auto;}
+.dialog-foot{display:flex; justify-content:space-between; gap:8px; padding:12px 18px; border-top:1px solid var(--line);}
+.field{margin-bottom:12px;}
+.field label{display:block; font-size:0.78rem; color:var(--ink-soft); margin-bottom:4px; font-weight:600; text-transform:uppercase; letter-spacing:0.03em;}
+
+.dialog-grid{display:grid; grid-template-columns: 1.15fr 1fr; gap:20px; align-items:start;}
+@media (max-width: 760px){ .dialog-grid{grid-template-columns: 1fr;} }
+.dialog-preview-col{position:sticky; top:0;}
+.preview-page-outer{
+  width:100%; max-width:340px; aspect-ratio: 672 / 912; overflow:hidden;
+  background:#ffffff; border:1px solid var(--line); border-radius:4px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15); margin:0 auto;
+}
+.preview-page-inner{
+  width:672px; height:912px; transform-origin:top left; background:#ffffff; color:#000000;
+}
+
+.section-editor{border:1px solid var(--line); border-radius:8px; padding:10px; margin-bottom:10px; background:var(--bg);}
+.section-editor .sec-head{display:flex; gap:6px; align-items:center; margin-bottom:8px;}
+.section-editor .sec-head input{flex:1;}
+.chord-grid{border-collapse:collapse; margin-bottom:6px;}
+.chord-grid td{border:1px solid var(--line); padding:0;}
+.chord-grid td[contenteditable]{
+  min-width:44px; padding:5px 7px; text-align:center; font-weight:700; font-size:0.95rem; outline:none;
+}
+.chord-grid td[contenteditable]:focus{background:var(--accent-soft);}
+.grid-controls{display:flex; gap:6px; flex-wrap:wrap;}
+
+.toast{
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  background:var(--ink); color:var(--bg); padding:10px 18px; border-radius:8px; font-size:0.88rem;
+  box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:opacity 0.25s ease;
+  z-index:999;
+}
+.toast.show{opacity:1;}
+
+.hint{font-size:0.78rem; color:var(--ink-soft); margin-top:4px;}
+.warn-badge{font-size:0.7rem; color:var(--danger); border:1px solid var(--danger); border-radius:999px; padding:1px 7px;}
+
+.pin-gate{position:fixed; inset:0; background:var(--bg); display:flex; align-items:center; justify-content:center; z-index:1000; padding:16px;}
+.pin-box{max-width:280px; width:100%; text-align:center;}
+.pin-box h1{font-size:1.3rem;}
+.pin-box input{text-align:center; font-size:1.1rem; letter-spacing:0.3em; margin-bottom:10px;}
+.pin-box button{width:100%;}
+[hidden]{display:none !important;}
+</style>
+</head>
+<body>
+
+<div class="pin-gate" id="pinGate">
+  <div class="pin-box">
+    <h1>Gig Chordbook</h1>
+    <p class="hint">Enter the PIN to continue.</p>
+    <input type="password" id="pinInput" autocomplete="off" placeholder="PIN">
+    <button class="primary" id="pinSubmitBtn">Enter</button>
+    <p class="hint" id="pinError" style="color:var(--danger);" hidden>Incorrect PIN — try again.</p>
+  </div>
+</div>
+
+<div id="appRoot" hidden>
+
+<div class="app-header">
+  <div>
+    <h1>Gig Chordbook</h1>
+    <p>Your song library, build a setlist, download a print-ready PDF.</p>
+  </div>
+  <span class="status-pill" id="statusPill">loading…</span>
+</div>
+
+<div class="layout">
+  <section class="panel" id="libraryPanel">
+    <div class="panel-head">
+      <h2>Song Library</h2>
+      <button class="primary" id="addSongBtn">+ Add Song</button>
+    </div>
+
+    <div class="data-tools">
+      <div class="btn-row">
+        <button id="downloadJsonBtn" title="Download the current library as songs.json">⬇ Download songs.json</button>
+        <button id="reloadJsonBtn" title="Reload the library from songs.json, discarding browser-only changes">↺ Reload songs.json</button>
+      </div>
+      <div class="btn-row" style="margin-top:6px;">
+        <button id="exportCsvBtn" title="Download your whole library as a CSV file">⬇ Export CSV</button>
+        <button id="importCsvBtn" title="Add songs in bulk from a CSV file">⬆ Import CSV</button>
+      </div>
+      <input type="file" id="csvFileInput" accept=".csv,text/csv" style="display:none">
+      <p class="hint" style="margin:8px 0 0;"><b>songs.json</b> is this library's save file, sitting next to this page in your GitHub repo. Changes you make here (adding songs, editing, importing) are kept automatically in this browser, but that's only local to this device — click <b>Download songs.json</b> and commit that file to your repo to save your changes for good and see them anywhere else. <b>Reload songs.json</b> pulls the committed file back in, replacing what's in this browser.</p>
+      <p class="hint">Export/Import CSV is for bulk-adding songs from a spreadsheet — open the exported CSV in Google Sheets as a template (columns: <b>Title, Section, Chords, Lyrics, Notes, Layout, Text Size %, Chord Size %</b>; put each chord row on its own line inside a "Chords" cell, chords separated by commas, e.g. "C, Am, F, C"). A song with multiple sections gets one extra row per section — leave Title blank on those rows. Importing never overwrites an existing song: if a title matches one you already have, the new one is added with "(copy)" on the end so you can find it later (search "copy") and decide what to keep. Remember to Download songs.json afterward to make an import permanent.</p>
+    </div>
+
+    <div class="search-row">
+      <input type="text" id="searchBox" placeholder="Search songs…">
+    </div>
+    <ul class="song-list" id="songList"></ul>
+  </section>
+
+  <section class="panel" id="setlistPanel">
+    <div class="panel-head">
+      <h2>Gig Setlist</h2>
+      <div class="btn-row">
+        <select id="savedGigsSelect"><option value="">Load saved gig…</option></select>
+        <button id="saveGigBtn">Save as…</button>
+      </div>
+    </div>
+    <div class="hint" id="gigNameLine" style="margin-bottom:8px;"></div>
+    <ul class="setlist" id="setlistUl"></ul>
+    <p class="empty-note" id="setlistEmpty">Add songs from the library on the left. Drag rows here to reorder once added.</p>
+    <div class="setlist-actions">
+      <button class="primary" id="printBtn">📄 Download PDF</button>
+      <button id="copyBtn">📋 Copy as Text</button>
+      <button class="subtle danger" id="clearGigBtn">Clear setlist</button>
+    </div>
+    <p class="hint">Click <b>Download PDF</b> to build a print-ready file of the setlist — one song per page, chords boxed, text sized to fit — and save it wherever you like, ready to print. <b>Copy as Text</b> is a plain-text fallback (titles, chords and lyrics, no page breaks or big print) if you just want the setlist somewhere like a text file or message.</p>
+    <p class="hint">Saved gigs and the current setlist are kept in this browser only (not in songs.json). If you need them on another device, rebuild the setlist there from the shared song library.</p>
+  </section>
+</div>
+
+<dialog id="songDialog">
+  <div class="dialog-body">
+    <div class="dialog-grid">
+      <div class="dialog-fields">
+        <div class="field">
+          <label>Title</label>
+          <input type="text" id="editTitle" placeholder="Song title">
+        </div>
+        <div class="field">
+          <label>Chord Grid</label>
+          <div id="sectionsContainer"></div>
+          <button id="addSectionBtn">+ Add Section</button>
+        </div>
+        <div class="field">
+          <label>Lyrics</label>
+          <textarea id="editLyrics" rows="10" placeholder="Paste your lyrics here…"></textarea>
+        </div>
+        <div class="field">
+          <label>Notes (arrangement, breaks, etc.)</label>
+          <textarea id="editNotes" rows="2" placeholder="e.g. Vamp D to start, break on 3rd chorus…"></textarea>
+        </div>
+      </div>
+      <div class="dialog-preview-col">
+        <div class="field">
+          <label>Print Layout</label>
+          <div class="btn-row" style="align-items:center; margin-bottom:8px;">
+            <select id="editColumns">
+              <option value="auto">Auto (recommended)</option>
+              <option value="1">Force 1 column</option>
+              <option value="2">Two columns (split lyrics)</option>
+              <option value="side">Chords beside lyrics</option>
+            </select>
+          </div>
+          <div class="btn-row" style="align-items:center; margin-bottom:4px;">
+            <span style="font-size:0.85rem; min-width:80px;">Lyrics size:</span>
+            <button type="button" id="fontDownBtn">−</button>
+            <span id="fontScaleLabel" style="font-size:0.85rem; min-width:38px; text-align:center; display:inline-block;">100%</span>
+            <button type="button" id="fontUpBtn">+</button>
+          </div>
+          <div class="btn-row" style="align-items:center;">
+            <span style="font-size:0.85rem; min-width:80px;">Chord size:</span>
+            <button type="button" id="chordDownBtn">−</button>
+            <span id="chordScaleLabel" style="font-size:0.85rem; min-width:38px; text-align:center; display:inline-block;">100%</span>
+            <button type="button" id="chordUpBtn">+</button>
+          </div>
+          <p class="hint">Auto splits long lyrics into two columns to keep text readable instead of shrinking it small. "Chords beside lyrics" puts the chord grid in its own column so you can size it independently — bump Chord size up to make it stand out.</p>
+        </div>
+        <div class="field">
+          <label>Live Preview <span id="previewOverflowBadge" class="warn-badge" style="display:none; margin-left:4px;">won't fit 1 page</span></label>
+          <div class="preview-page-outer" id="previewOuter"><div class="preview-page-inner" id="previewInner"></div></div>
+          <p class="hint">Shown at real page proportions — if content gets cut off at the bottom, it won't fit on one printed page.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-foot">
+    <button class="danger" id="deleteSongBtn">Delete Song</button>
+    <div class="btn-row">
+      <button id="cancelSongBtn">Cancel</button>
+      <button class="primary" id="saveSongBtn">Save</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast"></div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  // ---------- utilities ----------
+  function esc(s){
+    return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function uid(){ return 'id'+Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
+  let toastTimer=null;
+  function toast(msg){
+    const t=document.getElementById('toast');
+    t.textContent=msg; t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(()=>t.classList.remove('show'), 2600);
+  }
+  function downloadFile(filename, content, mime){
+    const blob = (content instanceof Blob) ? content : new Blob([content], {type: mime||'application/octet-stream'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(()=> URL.revokeObjectURL(url), 4000);
+  }
+  // Key-order-independent stringify, used only to compare "does the browser
+  // copy still match songs.json" without false positives from key ordering.
+  function stableStringify(obj){
+    return JSON.stringify(obj, function(key, value){
+      if(value && typeof value==='object' && !Array.isArray(value)){
+        const sorted = {};
+        Object.keys(value).sort().forEach(k=> sorted[k]=value[k]);
+        return sorted;
+      }
+      return value;
+    });
+  }
+  function withId(s){ return s.id ? s : {...s, id:uid()}; }
+
+  // ---------- state ----------
+  const LS_SONGS_KEY = 'chordbook_songs_v1';
+  const LS_STATE_KEY = 'chordbook_state_v1';
+  const LS_GIGS_KEY  = 'chordbook_gigs_v1';
+
+  let songs = [];         // [{id,title,sections,lyrics,notes,layout}]
+  let setlist = [];       // [songId,...]
+  let currentGigName='';
+  let savedGigs = {};     // {name: {songIds, updatedAt}}
+  let editingSongId=null; // null = new song
+  let sectionsDraft=[];   // working copy while editing a song
+  let layoutDraft={columns:'auto', scale:1, chordScale:1};
+  let dirty = false;
+
+  function updateStatusPill(){
+    document.getElementById('statusPill').textContent = dirty
+      ? 'unsaved — download songs.json to save for good'
+      : 'matches songs.json';
+  }
+  function saveSongsLocalSilent(){
+    try{ localStorage.setItem(LS_SONGS_KEY, JSON.stringify(songs)); }catch(e){ console.error('localStorage save failed', e); }
+  }
+  function saveSongsLocal(){
+    saveSongsLocalSilent();
+    dirty = true;
+    updateStatusPill();
+  }
+  function saveStateLocal(){
+    try{ localStorage.setItem(LS_STATE_KEY, JSON.stringify({songIds:setlist, name:currentGigName})); }catch(e){}
+  }
+  function saveGigsLocal(){
+    try{ localStorage.setItem(LS_GIGS_KEY, JSON.stringify(savedGigs)); }catch(e){}
+  }
+
+  // ---------- bootstrap ----------
+  async function initLocal(){
+    let fileSongs = null;
+    try{
+      const res = await fetch('songs.json', {cache:'no-store'});
+      if(res.ok) fileSongs = await res.json();
+    }catch(e){ console.error('Could not load songs.json', e); }
+
+    const storedSongs = localStorage.getItem(LS_SONGS_KEY);
+    if(storedSongs){
+      try{ songs = JSON.parse(storedSongs); }catch(e){ songs = []; }
+    } else if(Array.isArray(fileSongs)){
+      songs = fileSongs.map(withId);
+      saveSongsLocalSilent();
+    } else {
+      songs = [];
+    }
+
+    dirty = Array.isArray(fileSongs)
+      ? (stableStringify(fileSongs.map(withId)) !== stableStringify(songs))
+      : songs.length>0;
+    updateStatusPill();
+
+    const storedState = localStorage.getItem(LS_STATE_KEY);
+    if(storedState){
+      try{
+        const d=JSON.parse(storedState);
+        setlist = Array.isArray(d.songIds) ? d.songIds : [];
+        currentGigName = d.name||'';
+      }catch(e){}
+    }
+    const storedGigs = localStorage.getItem(LS_GIGS_KEY);
+    if(storedGigs){
+      try{ savedGigs = JSON.parse(storedGigs)||{}; }catch(e){ savedGigs={}; }
+    }
+
+    renderLibrary();
+    renderSetlist();
+    refreshSavedGigsList();
+  }
+
+  document.getElementById('downloadJsonBtn').addEventListener('click', ()=>{
+    if(songs.length===0){ toast('No songs in your library yet'); return; }
+    const sorted = songs.slice().sort((a,b)=> (a.title||'').localeCompare(b.title||'', undefined, {sensitivity:'base'}));
+    downloadFile('songs.json', JSON.stringify(sorted, null, 2), 'application/json');
+    dirty = false;
+    updateStatusPill();
+    toast('Downloaded songs.json — commit this file to your GitHub repo to save it for good');
+  });
+
+  document.getElementById('reloadJsonBtn').addEventListener('click', async ()=>{
+    if(!confirm('Reload from songs.json? This replaces your library with what\'s in the committed file, discarding any browser-only changes.')) return;
+    try{
+      const res = await fetch('songs.json', {cache:'no-store'});
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      const data = await res.json();
+      songs = Array.isArray(data) ? data.map(withId) : [];
+      saveSongsLocalSilent();
+      dirty = false;
+      updateStatusPill();
+      renderLibrary(); renderSetlist();
+      toast('Reloaded from songs.json');
+    }catch(e){ toast('Could not load songs.json: '+(e&&e.message?e.message:'unknown error')); }
+  });
+
+  function persistCurrent(){
+    document.getElementById('gigNameLine').textContent = currentGigName ? ('Working on: '+currentGigName) : '';
+    saveStateLocal();
+  }
+
+  function refreshSavedGigsList(){
+    const sel = document.getElementById('savedGigsSelect');
+    const names = Object.keys(savedGigs).sort((a,b)=>a.localeCompare(b));
+    sel.innerHTML = '<option value="">Load saved gig…</option>' +
+      names.map(n=>`<option value="${esc(n)}">${esc(n)}</option>`).join('');
+  }
+
+  // ---------- library rendering ----------
+  function renderLibrary(){
+    const list = document.getElementById('songList');
+    const q = (document.getElementById('searchBox').value||'').toLowerCase();
+    const filtered = songs.filter(s=> (s.title||'').toLowerCase().includes(q))
+      .sort((a,b)=> (a.title||'').localeCompare(b.title||'', undefined, {sensitivity:'base'}));
+    if(filtered.length===0){
+      list.innerHTML = '<li class="empty-note">No songs found.</li>';
+      return;
+    }
+    list.innerHTML = filtered.map(s=>`
+      <li class="song-row">
+        <span class="title">${esc(s.title||'(untitled)')}</span>
+        <button class="subtle" data-edit="${esc(s.id)}" title="Edit">✎</button>
+        <button class="primary" data-add="${esc(s.id)}" title="Add to setlist">+ Add</button>
+      </li>
+    `).join('');
+    list.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>openSongDialog(b.getAttribute('data-edit'))));
+    list.querySelectorAll('[data-add]').forEach(b=>b.addEventListener('click',()=>{
+      setlist.push(b.getAttribute('data-add'));
+      persistCurrent();
+      renderSetlist();
+    }));
+  }
+
+  // ---------- setlist rendering ----------
+  let dragSrcIndex=null;
+
+  function renderSetlist(){
+    const ul = document.getElementById('setlistUl');
+    const empty = document.getElementById('setlistEmpty');
+    document.getElementById('gigNameLine').textContent = currentGigName ? ('Working on: '+currentGigName) : '';
+    if(setlist.length===0){
+      ul.innerHTML=''; empty.style.display='block';
+      return;
+    }
+    empty.style.display='none';
+    ul.innerHTML = setlist.map((id,idx)=>{
+      const song = songs.find(s=>s.id===id);
+      const title = song ? song.title : '(song removed from library)';
+      return `
+      <li class="setlist-row" draggable="true" data-idx="${idx}">
+        <span class="handle">⠿</span>
+        <span class="num">${idx+1}.</span>
+        <span class="title">${esc(title)}</span>
+        <button class="subtle" data-up="${idx}" title="Move up" ${idx===0?'disabled':''}>▲</button>
+        <button class="subtle" data-down="${idx}" title="Move down" ${idx===setlist.length-1?'disabled':''}>▼</button>
+        <button class="subtle danger" data-remove="${idx}" title="Remove">✕</button>
+      </li>`;
+    }).join('');
+
+    ul.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>{
+      setlist.splice(parseInt(b.getAttribute('data-remove'),10),1);
+      persistCurrent(); renderSetlist();
+    }));
+    ul.querySelectorAll('[data-up]').forEach(b=>b.addEventListener('click',()=>{
+      const i=parseInt(b.getAttribute('data-up'),10);
+      if(i>0){ [setlist[i-1],setlist[i]]=[setlist[i],setlist[i-1]]; persistCurrent(); renderSetlist(); }
+    }));
+    ul.querySelectorAll('[data-down]').forEach(b=>b.addEventListener('click',()=>{
+      const i=parseInt(b.getAttribute('data-down'),10);
+      if(i<setlist.length-1){ [setlist[i+1],setlist[i]]=[setlist[i],setlist[i+1]]; persistCurrent(); renderSetlist(); }
+    }));
+
+    ul.querySelectorAll('.setlist-row').forEach(row=>{
+      row.addEventListener('dragstart', (e)=>{
+        dragSrcIndex = parseInt(row.getAttribute('data-idx'),10);
+        row.classList.add('dragging');
+        e.dataTransfer.effectAllowed='move';
+      });
+      row.addEventListener('dragend', ()=> row.classList.remove('dragging'));
+      row.addEventListener('dragover', (e)=>{ e.preventDefault(); e.dataTransfer.dropEffect='move'; });
+      row.addEventListener('drop', (e)=>{
+        e.preventDefault();
+        const destIdx = parseInt(row.getAttribute('data-idx'),10);
+        if(dragSrcIndex===null || dragSrcIndex===destIdx) return;
+        const item = setlist.splice(dragSrcIndex,1)[0];
+        setlist.splice(destIdx,0,item);
+        dragSrcIndex=null;
+        persistCurrent();
+        renderSetlist();
+      });
+    });
+  }
+
+  // ---------- song editor dialog ----------
+  function blankSection(){ return {label:'Verse', rows:[['','','','']]}; }
+
+  function updateFontScaleLabel(){
+    document.getElementById('fontScaleLabel').textContent = Math.round(layoutDraft.scale*100)+'%';
+    document.getElementById('chordScaleLabel').textContent = Math.round((layoutDraft.chordScale||1)*100)+'%';
+  }
+
+  function currentDraftSong(){
+    return {
+      title: document.getElementById('editTitle').value || '',
+      sections: sectionsDraft,
+      lyrics: document.getElementById('editLyrics').value || '',
+      notes: document.getElementById('editNotes').value || '',
+      layout: layoutDraft,
+    };
+  }
+
+  let previewRaf = null;
+  function updatePreview(){
+    if(previewRaf) cancelAnimationFrame(previewRaf);
+    previewRaf = requestAnimationFrame(()=>{
+      previewRaf = null;
+      const song = currentDraftSong();
+      const outer = document.getElementById('previewOuter');
+      const inner = document.getElementById('previewInner');
+      const badge = document.getElementById('previewOverflowBadge');
+      let layoutRes;
+      try{ layoutRes = resolveLayout(song); }
+      catch(e){ return; }
+      inner.innerHTML = songInnerHTML(song, layoutRes.basePx, false, layoutRes.columns, layoutRes.chordScale);
+      const scale = outer.clientWidth / PAGE_W;
+      inner.style.transform = 'scale('+scale+')';
+      badge.style.display = layoutRes.overflowed ? 'inline-block' : 'none';
+    });
+  }
+
+  function openSongDialog(id){
+    editingSongId = id || null;
+    const song = id ? songs.find(s=>s.id===id) : {title:'', sections:[blankSection()], lyrics:'', notes:'', layout:{columns:'auto', scale:1, chordScale:1}};
+    document.getElementById('editTitle').value = song.title||'';
+    document.getElementById('editLyrics').value = song.lyrics||'';
+    document.getElementById('editNotes').value = song.notes||'';
+    sectionsDraft = JSON.parse(JSON.stringify(song.sections&&song.sections.length?song.sections:[blankSection()]));
+    layoutDraft = JSON.parse(JSON.stringify(song.layout || {columns:'auto', scale:1, chordScale:1}));
+    if(layoutDraft.chordScale==null) layoutDraft.chordScale = 1;
+    document.getElementById('editColumns').value = String(layoutDraft.columns||'auto');
+    updateFontScaleLabel();
+    document.getElementById('deleteSongBtn').style.display = id ? 'inline-block' : 'none';
+    renderSectionsEditor();
+    document.getElementById('songDialog').showModal();
+    updatePreview();
+  }
+
+  document.getElementById('editColumns').addEventListener('change', (e)=>{
+    const v = e.target.value;
+    layoutDraft.columns = (v==='1') ? 1 : (v==='2') ? 2 : (v==='side') ? 'side' : 'auto';
+    updatePreview();
+  });
+  document.getElementById('fontDownBtn').addEventListener('click', ()=>{
+    layoutDraft.scale = Math.max(0.5, Math.round((layoutDraft.scale-0.1)*10)/10);
+    updateFontScaleLabel();
+    updatePreview();
+  });
+  document.getElementById('fontUpBtn').addEventListener('click', ()=>{
+    layoutDraft.scale = Math.min(1.6, Math.round((layoutDraft.scale+0.1)*10)/10);
+    updateFontScaleLabel();
+    updatePreview();
+  });
+  document.getElementById('chordDownBtn').addEventListener('click', ()=>{
+    layoutDraft.chordScale = Math.max(0.5, Math.round(((layoutDraft.chordScale||1)-0.1)*10)/10);
+    updateFontScaleLabel();
+    updatePreview();
+  });
+  document.getElementById('chordUpBtn').addEventListener('click', ()=>{
+    layoutDraft.chordScale = Math.min(2.2, Math.round(((layoutDraft.chordScale||1)+0.1)*10)/10);
+    updateFontScaleLabel();
+    updatePreview();
+  });
+  document.getElementById('editTitle').addEventListener('input', updatePreview);
+  document.getElementById('editLyrics').addEventListener('input', updatePreview);
+  document.getElementById('editNotes').addEventListener('input', updatePreview);
+
+  function renderSectionsEditor(){
+    const container = document.getElementById('sectionsContainer');
+    container.innerHTML = sectionsDraft.map((sec, si)=>`
+      <div class="section-editor" data-si="${si}">
+        <div class="sec-head">
+          <input type="text" placeholder="Section label (optional)" value="${esc(sec.label||'')}" data-label="${si}">
+          <button class="subtle danger" data-remove-section="${si}" title="Remove section">✕ section</button>
+        </div>
+        <table class="chord-grid">
+          ${sec.rows.map((row,ri)=>`<tr>${row.map((cell,ci)=>`<td contenteditable="true" data-r="${ri}" data-c="${ci}" data-si2="${si}">${esc(cell)}</td>`).join('')}</tr>`).join('')}
+        </table>
+        <div class="grid-controls">
+          <button data-addrow="${si}">+ Row</button>
+          <button data-delrow="${si}">− Row</button>
+          <button data-addcol="${si}">+ Col</button>
+          <button data-delcol="${si}">− Col</button>
+        </div>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('[data-label]').forEach(inp=>{
+      inp.addEventListener('input', ()=>{ sectionsDraft[parseInt(inp.getAttribute('data-label'),10)].label = inp.value; updatePreview(); });
+    });
+    container.querySelectorAll('[contenteditable]').forEach(td=>{
+      td.addEventListener('input', ()=>{
+        const si=parseInt(td.getAttribute('data-si2'),10), r=parseInt(td.getAttribute('data-r'),10), c=parseInt(td.getAttribute('data-c'),10);
+        sectionsDraft[si].rows[r][c] = td.textContent;
+        updatePreview();
+      });
+    });
+    container.querySelectorAll('[data-remove-section]').forEach(b=>b.addEventListener('click',()=>{
+      const si=parseInt(b.getAttribute('data-remove-section'),10);
+      sectionsDraft.splice(si,1);
+      if(sectionsDraft.length===0) sectionsDraft.push(blankSection());
+      renderSectionsEditor();
+      updatePreview();
+    }));
+    container.querySelectorAll('[data-addrow]').forEach(b=>b.addEventListener('click',()=>{
+      const si=parseInt(b.getAttribute('data-addrow'),10);
+      const cols = sectionsDraft[si].rows[0] ? sectionsDraft[si].rows[0].length : 4;
+      sectionsDraft[si].rows.push(new Array(cols).fill(''));
+      renderSectionsEditor();
+      updatePreview();
+    }));
+    container.querySelectorAll('[data-delrow]').forEach(b=>b.addEventListener('click',()=>{
+      const si=parseInt(b.getAttribute('data-delrow'),10);
+      if(sectionsDraft[si].rows.length>1) sectionsDraft[si].rows.pop();
+      renderSectionsEditor();
+      updatePreview();
+    }));
+    container.querySelectorAll('[data-addcol]').forEach(b=>b.addEventListener('click',()=>{
+      const si=parseInt(b.getAttribute('data-addcol'),10);
+      sectionsDraft[si].rows.forEach(row=>row.push(''));
+      renderSectionsEditor();
+      updatePreview();
+    }));
+    container.querySelectorAll('[data-delcol]').forEach(b=>b.addEventListener('click',()=>{
+      const si=parseInt(b.getAttribute('data-delcol'),10);
+      sectionsDraft[si].rows.forEach(row=>{ if(row.length>1) row.pop(); });
+      renderSectionsEditor();
+      updatePreview();
+    }));
+  }
+
+  document.getElementById('addSectionBtn').addEventListener('click', ()=>{
+    sectionsDraft.push(blankSection());
+    renderSectionsEditor();
+    updatePreview();
+  });
+
+  document.getElementById('addSongBtn').addEventListener('click', ()=> openSongDialog(null));
+  document.getElementById('cancelSongBtn').addEventListener('click', ()=> document.getElementById('songDialog').close());
+
+  document.getElementById('saveSongBtn').addEventListener('click', ()=>{
+    const data = {
+      title: document.getElementById('editTitle').value.trim() || 'Untitled',
+      sections: sectionsDraft,
+      lyrics: document.getElementById('editLyrics').value,
+      notes: document.getElementById('editNotes').value,
+      layout: layoutDraft,
+    };
+    if(editingSongId){
+      const idx=songs.findIndex(s=>s.id===editingSongId);
+      if(idx>=0) songs[idx]={...songs[idx], ...data};
+    } else {
+      songs.push({id:uid(), ...data});
+    }
+    saveSongsLocal();
+    renderLibrary(); renderSetlist();
+    document.getElementById('songDialog').close();
+  });
+
+  document.getElementById('deleteSongBtn').addEventListener('click', ()=>{
+    if(!editingSongId) return;
+    if(!confirm('Delete this song from your library?')) return;
+    songs = songs.filter(s=>s.id!==editingSongId);
+    setlist = setlist.filter(id=>id!==editingSongId);
+    saveSongsLocal();
+    persistCurrent();
+    renderLibrary(); renderSetlist();
+    document.getElementById('songDialog').close();
+  });
+
+  document.getElementById('searchBox').addEventListener('input', renderLibrary);
+
+  // ---------- saved gigs (browser-only) ----------
+  document.getElementById('saveGigBtn').addEventListener('click', ()=>{
+    const name = prompt('Name this gig / setlist:', currentGigName||'');
+    if(!name) return;
+    currentGigName = name;
+    savedGigs[name] = {songIds:setlist.slice(), updatedAt:Date.now()};
+    saveGigsLocal();
+    refreshSavedGigsList();
+    persistCurrent();
+    toast('Saved “'+name+'”');
+  });
+
+  document.getElementById('savedGigsSelect').addEventListener('change', (e)=>{
+    const name = e.target.value;
+    if(!name) return;
+    const g = savedGigs[name];
+    if(g){
+      setlist = Array.isArray(g.songIds) ? g.songIds.slice() : [];
+      currentGigName = name;
+      persistCurrent();
+      renderSetlist();
+    }
+    e.target.value='';
+  });
+
+  document.getElementById('clearGigBtn').addEventListener('click', ()=>{
+    if(setlist.length && !confirm('Clear the current setlist?')) return;
+    setlist=[]; currentGigName='';
+    persistCurrent(); renderSetlist();
+  });
+
+  // ---------- print / clipboard rendering ----------
+  const PAGE_WIDTH_IN = 8.5, PAGE_HEIGHT_IN = 11, MARGIN_IN = 0.75, PX_PER_IN = 96;
+  const PAGE_W = Math.round((PAGE_WIDTH_IN - MARGIN_IN*2) * PX_PER_IN);
+  const PAGE_H = Math.round((PAGE_HEIGHT_IN - MARGIN_IN*2) * PX_PER_IN);
+  const MIN_SCALE = 0.5;
+
+  function sectionHTML(sec, basePx, chordScale){
+    chordScale = chordScale || 1;
+    const cpx = basePx * chordScale;
+    const rows = sec.rows.map(row=>`<tr>${row.map(cell=>
+      `<td style="border:1px solid #888; padding:${(cpx*0.22).toFixed(1)}px ${(cpx*0.45).toFixed(1)}px; font-size:${(cpx*1.45).toFixed(1)}px; font-weight:700; text-align:center; min-width:${(cpx*1.7).toFixed(1)}px; font-family:Arial,Helvetica,sans-serif;">${esc(cell)||'&nbsp;'}</td>`
+    ).join('')}</tr>`).join('');
+    const label = sec.label ? `<div style="font-size:${(cpx*1.12).toFixed(1)}px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; margin:${(cpx*0.5).toFixed(1)}px 0 ${(cpx*0.15).toFixed(1)}px; font-family:Arial,Helvetica,sans-serif;">${esc(sec.label)}</div>` : `<div style="margin-top:${(cpx*0.4).toFixed(1)}px;"></div>`;
+    return `${label}<table style="border-collapse:collapse;">${rows}</table>`;
+  }
+
+  // Column 1 gets the first run of verses in order, column 2 gets the rest —
+  // so reading top-to-bottom down column 1 then continuing at the top of
+  // column 2 follows the song in order, instead of verses alternating
+  // left/right row by row.
+  function splitLyricsTwoColumns(lyrics){
+    const verses = lyrics.split(/\n\s*\n/);
+    const lineCounts = verses.map(v=> v.split('\n').length);
+    const totalLines = lineCounts.reduce((a,b)=>a+b, 0);
+    const target = totalLines / 2;
+
+    let running = 0;
+    let splitIndex = verses.length; // default: everything in column 1
+    for(let i=0;i<verses.length;i++){
+      running += lineCounts[i];
+      if(running >= target){
+        const withThis = running;
+        const withoutThis = running - lineCounts[i];
+        splitIndex = (Math.abs(withThis-target) <= Math.abs(withoutThis-target)) ? i+1 : i;
+        break;
+      }
+    }
+    // Never leave column 2 completely empty when there's more than one verse to split.
+    if(splitIndex>=verses.length && verses.length>1) splitIndex = verses.length-1;
+    if(splitIndex<=0 && verses.length>1) splitIndex = 1;
+
+    const colA = verses.slice(0, splitIndex);
+    const colB = verses.slice(splitIndex);
+    return [colA.join('\n\n'), colB.join('\n\n')];
+  }
+
+  function lyricsHTML(song, basePx, columns){
+    if(!song.lyrics) return '';
+    const base = `font-size:${basePx}px; line-height:1.35; font-family:Georgia,'Times New Roman',serif; white-space:pre-wrap;`;
+    if(columns===2){
+      const [a,b] = splitLyricsTwoColumns(song.lyrics);
+      const gap = (basePx*1.3).toFixed(1);
+      return `<div style="display:flex; gap:${gap}px; margin-top:${(basePx*0.7).toFixed(1)}px;">
+        <div style="flex:1; min-width:0; ${base}">${esc(a)}</div>
+        <div style="flex:1; min-width:0; ${base} border-left:1px solid #ccc; padding-left:${gap}px;">${esc(b)}</div>
+      </div>`;
+    }
+    return `<div style="margin-top:${(basePx*0.7).toFixed(1)}px; ${base}">${esc(song.lyrics)}</div>`;
+  }
+
+  function sideBySideHTML(song, basePx, chordScale){
+    const chords = (song.sections||[]).map(s=>sectionHTML(s,basePx,chordScale)).join('');
+    const lyrics = song.lyrics ? `<div style="white-space:pre-wrap; font-size:${basePx}px; line-height:1.35; font-family:Georgia,'Times New Roman',serif;">${esc(song.lyrics)}</div>` : '';
+    const gap = (basePx*1.3).toFixed(1);
+    return `<div style="display:flex; gap:${gap}px; align-items:flex-start; margin-top:${(basePx*0.3).toFixed(1)}px;">
+      <div style="flex:0 0 auto; max-width:55%;">${chords}</div>
+      <div style="flex:1; min-width:0; border-left:1px solid #ccc; padding-left:${gap}px;">${lyrics}</div>
+    </div>`;
+  }
+
+  function songInnerHTML(song, basePx, pageBreakBefore, columns, chordScale){
+    chordScale = chordScale || 1;
+    const breakTag = pageBreakBefore ? `<br style="page-break-before:always; mso-special-character:line-break;">` : '';
+    const titleStyle = `font-size:${(basePx*2).toFixed(1)}px; font-weight:700; text-align:center; margin-bottom:${(basePx*0.4).toFixed(1)}px; font-family:Arial,Helvetica,sans-serif;` + (pageBreakBefore ? ' page-break-before:always;' : '');
+    const titleHTML = `${breakTag}<div style="${titleStyle}">${esc(song.title)}</div>`;
+    const notes = song.notes ? `<div style="font-size:${(basePx*0.82).toFixed(1)}px; font-style:italic; color:#555; margin-top:${(basePx*0.6).toFixed(1)}px; font-family:Arial,Helvetica,sans-serif;">${esc(song.notes)}</div>` : '';
+
+    if(columns==='side'){
+      return titleHTML + sideBySideHTML(song, basePx, chordScale) + notes;
+    }
+    columns = columns===2 ? 2 : 1;
+    const sections = (song.sections||[]).map(s=>sectionHTML(s,basePx,chordScale)).join('');
+    const lyrics = lyricsHTML(song, basePx, columns);
+    return titleHTML + sections + lyrics + notes;
+  }
+
+  function measureHeight(song, basePx, columns, chordScale){
+    const probe = document.createElement('div');
+    probe.style.position='absolute'; probe.style.visibility='hidden'; probe.style.left='-9999px'; probe.style.top='0';
+    probe.style.width = PAGE_W+'px'; probe.style.display='block';
+    document.body.appendChild(probe);
+    probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+    const h = probe.scrollHeight;
+    document.body.removeChild(probe);
+    return h;
+  }
+
+  function fitSong(song, columns, chordScale){
+    chordScale = chordScale || 1;
+    const probe = document.createElement('div');
+    probe.style.position='absolute'; probe.style.visibility='hidden'; probe.style.left='-9999px'; probe.style.top='0';
+    document.body.appendChild(probe);
+
+    let basePx = 16;
+
+    if(columns==='side'){
+      probe.style.width = PAGE_W+'px'; probe.style.display='block';
+      probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+      let h = probe.scrollHeight;
+      if(h > PAGE_H){
+        basePx = basePx * (PAGE_H / h) * 0.97;
+        probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+        h = probe.scrollHeight;
+      }
+      let overflowed = false;
+      if(h > PAGE_H && basePx > 16*MIN_SCALE){
+        basePx = 16*MIN_SCALE;
+        probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+        h = probe.scrollHeight;
+      }
+      if(h > PAGE_H) overflowed = true;
+      document.body.removeChild(probe);
+      return {basePx, overflowed};
+    }
+
+    probe.style.width='auto'; probe.style.display='inline-block';
+    probe.innerHTML = songInnerHTML(song, basePx, false, 1, chordScale);
+    const naturalW = probe.scrollWidth;
+    if(naturalW > PAGE_W){ basePx = basePx * (PAGE_W / naturalW); }
+
+    probe.style.width = PAGE_W+'px';
+    probe.style.display = 'block';
+    probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+    let h = probe.scrollHeight;
+    if(h > PAGE_H){
+      basePx = basePx * (PAGE_H / h) * 0.97;
+      probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+      h = probe.scrollHeight;
+    }
+    let overflowed = false;
+    if(h > PAGE_H && basePx > 16*MIN_SCALE){
+      basePx = 16*MIN_SCALE;
+      probe.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+      h = probe.scrollHeight;
+    }
+    if(h > PAGE_H) overflowed = true;
+
+    document.body.removeChild(probe);
+    return {basePx, overflowed};
+  }
+
+  const COMFORTABLE_PX = 16*0.85;
+
+  function resolveLayout(song){
+    const layout = song.layout || {columns:'auto', scale:1, chordScale:1};
+    const scale = layout.scale || 1;
+    const chordScale = layout.chordScale || 1;
+    let columns, basePx;
+
+    if(layout.columns===1 || layout.columns===2 || layout.columns==='side'){
+      columns = layout.columns;
+      basePx = fitSong(song, columns, chordScale).basePx;
+    } else {
+      const r1 = fitSong(song, 1, chordScale);
+      if(!r1.overflowed && r1.basePx >= COMFORTABLE_PX){
+        columns = 1; basePx = r1.basePx;
+      } else {
+        const r2 = fitSong(song, 2, chordScale);
+        if(r2.basePx > r1.basePx){ columns = 2; basePx = r2.basePx; }
+        else { columns = 1; basePx = r1.basePx; }
+      }
+    }
+
+    basePx = basePx * scale;
+    const overflowed = measureHeight(song, basePx, columns, chordScale) > PAGE_H;
+    return {columns, basePx, chordScale, overflowed};
+  }
+
+  function sectionPlainText(sec){
+    const label = sec.label ? (sec.label.toUpperCase()+'\n') : '';
+    const rows = sec.rows.map(row=> row.join('  ')).join('\n');
+    return label + rows;
+  }
+
+  // ---------- CSV import / export ----------
+  function gridToCellText(rows){
+    return (rows||[]).map(r=> r.map(c=>(c==null?'':String(c)).trim()).join(', ')).join('\n');
+  }
+
+  function songsToCSVRows(list){
+    const header = ['Title','Section','Chords','Lyrics','Notes','Layout','Text Size %','Chord Size %'];
+    const out = [header];
+    list.forEach(song=>{
+      const sections = (song.sections && song.sections.length) ? song.sections : [{label:'', rows:[]}];
+      const layout = song.layout || {};
+      const columnsVal = layout.columns===1 ? '1' : layout.columns===2 ? '2' : layout.columns==='side' ? 'side' : 'auto';
+      const textPct = Math.round((layout.scale||1)*100);
+      const chordPct = Math.round((layout.chordScale||1)*100);
+      sections.forEach((sec, si)=>{
+        out.push([
+          si===0 ? (song.title||'') : '',
+          sec.label||'',
+          gridToCellText(sec.rows),
+          si===0 ? (song.lyrics||'') : '',
+          si===0 ? (song.notes||'') : '',
+          si===0 ? columnsVal : '',
+          si===0 ? String(textPct) : '',
+          si===0 ? String(chordPct) : '',
+        ]);
+      });
+    });
+    return out;
+  }
+
+  document.getElementById('exportCsvBtn').addEventListener('click', ()=>{
+    if(songs.length===0){ toast('No songs in your library yet'); return; }
+    if(typeof window.Papa==='undefined'){ toast('CSV tool failed to load — check your connection and try again'); return; }
+    const csv = window.Papa.unparse(songsToCSVRows(songs));
+    downloadFile('chordbook_library.csv', csv, 'text/csv');
+    toast('Exported '+songs.length+' song(s) to CSV');
+  });
+
+  function normKey(k){ return String(k||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
+  const CSV_HEADER_MAP = {
+    title:'title',
+    section:'section', sectionlabel:'section',
+    chords:'chords', chordgrid:'chords', chordsgrid:'chords',
+    lyrics:'lyrics',
+    notes:'notes',
+    layout:'layout', columns:'layout', printlayout:'layout',
+    textsize:'textsize', textsizepct:'textsize', textscale:'textsize', lyricssize:'textsize', fontsize:'textsize',
+    chordsize:'chordsize', chordsizepct:'chordsize', chordscale:'chordsize',
+  };
+  function normalizeCSVRow(raw){
+    const out={};
+    Object.keys(raw||{}).forEach(k=>{
+      const mapped = CSV_HEADER_MAP[normKey(k)];
+      if(mapped) out[mapped]=raw[k];
+    });
+    return out;
+  }
+  function parseGridCell(text){
+    return String(text||'').split(/\r\n|\r|\n/)
+      .filter(line=>line.trim()!=='')
+      .map(line=> line.split(',').map(c=>c.trim()));
+  }
+  function csvRowsToSongs(rawRows){
+    const result=[];
+    let current=null;
+    (rawRows||[]).forEach(raw=>{
+      const row = normalizeCSVRow(raw);
+      const title = (row.title||'').trim();
+      if(title){
+        if(current) result.push(current);
+        current = {title, sections:[], lyrics:'', notes:'', layout:{columns:'auto', scale:1, chordScale:1}};
+      }
+      if(!current) return;
+      const sectionLabel = (row.section||'').trim();
+      const chordsText = row.chords||'';
+      if(sectionLabel || chordsText.trim()){
+        current.sections.push({label:sectionLabel, rows:parseGridCell(chordsText)});
+      }
+      if(!current.lyrics && row.lyrics && row.lyrics.trim()) current.lyrics = row.lyrics;
+      if(!current.notes && row.notes && row.notes.trim()) current.notes = row.notes;
+      if(row.layout){
+        const v = row.layout.trim().toLowerCase();
+        current.layout.columns = (v==='1') ? 1 : (v==='2') ? 2 : (v==='side') ? 'side' : 'auto';
+      }
+      if(row.textsize && !isNaN(parseFloat(row.textsize))) current.layout.scale = parseFloat(row.textsize)/100;
+      if(row.chordsize && !isNaN(parseFloat(row.chordsize))) current.layout.chordScale = parseFloat(row.chordsize)/100;
+    });
+    if(current) result.push(current);
+    return result.filter(s=>s.title);
+  }
+
+  function flagDuplicateTitles(newSongs, existingSongs){
+    const seen = new Set(existingSongs.map(s=>(s.title||'').trim().toLowerCase()));
+    return newSongs.map(s=>{
+      const key = (s.title||'').trim().toLowerCase();
+      if(seen.has(key)){
+        return {...s, title:(s.title||'')+' (copy)'};
+      }
+      seen.add(key);
+      return s;
+    });
+  }
+
+  document.getElementById('importCsvBtn').addEventListener('click', ()=>{
+    document.getElementById('csvFileInput').click();
+  });
+  document.getElementById('csvFileInput').addEventListener('change', (e)=>{
+    const file = e.target.files && e.target.files[0];
+    e.target.value = '';
+    if(!file) return;
+    if(typeof window.Papa==='undefined'){ toast('CSV tool failed to load — check your connection and try again'); return; }
+    const reader = new FileReader();
+    reader.onload = ()=>{
+      try{
+        const parsed = window.Papa.parse(String(reader.result), {header:true, skipEmptyLines:true});
+        let newSongs = csvRowsToSongs(parsed.data);
+        if(newSongs.length===0){ toast('No songs found in that file — check the column headers match the template'); return; }
+        newSongs = flagDuplicateTitles(newSongs, songs);
+        const dupCount = newSongs.filter(s=>/ \(copy\)$/.test(s.title||'')).length;
+        newSongs.forEach(s=> songs.push({id:uid(), ...s}));
+        saveSongsLocal();
+        renderLibrary(); renderSetlist();
+        toast('Imported '+newSongs.length+' song(s)'+(dupCount ? (' — '+dupCount+' matched an existing title and were added as "(copy)"') : '')+'. Download songs.json to save this permanently.');
+      }catch(err){
+        toast('Could not import that file: '+(err&&err.message?err.message:'unknown error'));
+      }
+    };
+    reader.onerror = ()=> toast('Could not read that file');
+    reader.readAsText(file);
+  });
+
+  document.getElementById('copyBtn').addEventListener('click', async ()=>{
+    if(setlist.length===0){ toast('Add some songs to the setlist first'); return; }
+    const list = setlist.map(id=>songs.find(s=>s.id===id)).filter(Boolean);
+    const plain = list.map(s=>{
+      const chords = (s.sections||[]).map(sectionPlainText).join('\n\n');
+      return [s.title, chords, s.lyrics||'', s.notes?('Notes: '+s.notes):''].filter(Boolean).join('\n\n');
+    }).join('\n\n========================================\n\n');
+    try{
+      await navigator.clipboard.writeText(plain);
+      toast('Copied '+list.length+' song(s) as plain text');
+    }catch(e){
+      const tmp = document.createElement('textarea');
+      tmp.value = plain;
+      tmp.style.position='fixed'; tmp.style.left='-9999px';
+      document.body.appendChild(tmp);
+      tmp.select();
+      let ok=false;
+      try{ ok = document.execCommand('copy'); }catch(e2){ ok=false; }
+      document.body.removeChild(tmp);
+      toast(ok ? ('Copied '+list.length+' song(s) as plain text') : 'Copy failed — try the Download PDF button instead');
+    }
+  });
+
+  document.getElementById('printBtn').addEventListener('click', async ()=>{
+    if(setlist.length===0){ toast('Add some songs to the setlist first'); return; }
+    if(typeof window.jspdf==='undefined' || typeof window.html2canvas==='undefined'){
+      toast('PDF tools failed to load — check your connection and try again');
+      return;
+    }
+    const btn = document.getElementById('printBtn');
+    btn.disabled = true; btn.textContent = 'Building PDF…';
+    try{
+      const list = setlist.map(id=>songs.find(s=>s.id===id)).filter(Boolean);
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF({unit:'in', format:'letter'});
+      const marginIn = MARGIN_IN;
+      const contentWIn = PAGE_WIDTH_IN - marginIn*2;
+      const contentHIn = PAGE_HEIGHT_IN - marginIn*2;
+      let anyOverflow = false;
+
+      for(let i=0;i<list.length;i++){
+        const song = list[i];
+        const {basePx, overflowed, columns, chordScale} = resolveLayout(song);
+        if(overflowed) anyOverflow = true;
+        const holder = document.createElement('div');
+        holder.style.position='fixed'; holder.style.left='-9999px'; holder.style.top='0';
+        holder.style.width = PAGE_W+'px';
+        holder.style.background = '#ffffff';
+        holder.style.color = '#000000';
+        holder.innerHTML = songInnerHTML(song, basePx, false, columns, chordScale);
+        document.body.appendChild(holder);
+        const canvas = await window.html2canvas(holder, {scale:2, backgroundColor:'#ffffff'});
+        document.body.removeChild(holder);
+
+        const imgWIn = contentWIn;
+        const imgHIn = Math.min(contentHIn, imgWIn * canvas.height / canvas.width);
+        if(i>0) pdf.addPage();
+        pdf.addImage(canvas.toDataURL('image/png'), 'PNG', marginIn, marginIn, imgWIn, imgHIn);
+      }
+
+      const blob = pdf.output('blob');
+      const filename = (currentGigName ? currentGigName.replace(/[^\w\- ]+/g,'').trim() : 'setlist') + '.pdf';
+      downloadFile(filename, blob);
+      toast('PDF downloaded'+(anyOverflow?' (some songs may spill onto a 2nd page)':''));
+    }catch(e){
+      console.error('PDF build failed', e);
+      toast('Could not build the PDF: '+(e&&e.message?e.message:'unknown error'));
+    }finally{
+      btn.disabled = false; btn.textContent = '📄 Download PDF';
+    }
+  });
+
+  // ---------- PIN gate ----------
+  // Not real security — there's no server to check a password against, just
+  // this browser-side JS — but it keeps someone who stumbles on the link
+  // from casually poking around. The PIN itself is hashed (SHA-256) rather
+  // than stored in plain text so it isn't sitting in the page source as-is.
+  const PIN_HASH = 'f2f6eba0f1d673c68f196eca641ebc6ca93ef29433451ebe671247fbc10d655b';
+  const PIN_UNLOCK_KEY = 'chordbook_unlocked_v1';
+
+  async function sha256Hex(str){
+    const enc = new TextEncoder().encode(str);
+    const buf = await crypto.subtle.digest('SHA-256', enc);
+    return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+
+  function showApp(){
+    document.getElementById('pinGate').hidden = true;
+    document.getElementById('appRoot').hidden = false;
+    initLocal();
+  }
+
+  async function tryPin(){
+    const val = document.getElementById('pinInput').value;
+    let hash;
+    try{ hash = await sha256Hex(val); }catch(e){ hash = null; }
+    if(hash === PIN_HASH){
+      try{ localStorage.setItem(PIN_UNLOCK_KEY, '1'); }catch(e){}
+      document.getElementById('pinError').hidden = true;
+      showApp();
+    } else {
+      document.getElementById('pinError').hidden = false;
+      document.getElementById('pinInput').value = '';
+      document.getElementById('pinInput').focus();
+    }
+  }
+
+  document.getElementById('pinSubmitBtn').addEventListener('click', tryPin);
+  document.getElementById('pinInput').addEventListener('keydown', (e)=>{ if(e.key==='Enter') tryPin(); });
+
+  let alreadyUnlocked = false;
+  try{ alreadyUnlocked = localStorage.getItem(PIN_UNLOCK_KEY)==='1'; }catch(e){}
+  if(alreadyUnlocked){
+    showApp();
+  } else {
+    document.getElementById('pinInput').focus();
+  }
+})();
+</script>
+</body>
+</html>
