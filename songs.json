@@ -476,6 +476,57 @@
     ]
   },
   {
+    "id": "idmu25qetibs5d06",
+    "title": "Chasin' away the Blues",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "C7",
+            "G",
+            "G7"
+          ],
+          [
+            "C",
+            "C7",
+            "G",
+            "G"
+          ],
+          [
+            "D7",
+            "C7",
+            "G",
+            "D7"
+          ]
+        ]
+      },
+      {
+        "label": "End",
+        "rows": [
+          [
+            "D7",
+            "C7!",
+            "G",
+            "*G*"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "My feet are tired...[                    ]",
+    "notes": "",
+    "tags": [
+      "Original",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1,
+      "chordScale": 1.5
+    }
+  },
+  {
     "id": "idmtz9vqgloe5f70",
     "title": "Cold Frosty Morning",
     "sections": [
@@ -588,6 +639,122 @@
       "Country",
       "Folk"
     ]
+  },
+  {
+    "id": "idmu25dwtzltl57i",
+    "title": "Crooked Jack",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "Am",
+            "Am",
+            "C",
+            "G"
+          ],
+          [
+            "Am",
+            "Am",
+            "G",
+            "G"
+          ],
+          [
+            "Am",
+            "Am",
+            "C",
+            "G"
+          ],
+          [
+            "Am",
+            "G",
+            "Am",
+            "Am"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "C",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "Am",
+            "Am",
+            "Em",
+            "Em"
+          ],
+          [
+            "Am",
+            "Am",
+            "C",
+            "G..."
+          ],
+          [
+            "Am",
+            "G",
+            "Am",
+            "Am"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "Come Irishmen both young and old\nWith adventure in your soul\nThere are better ways to spend your days\nThan workin' down a hole\n\nI curse the day I went away\nTo work on those hydro dams\nAll our sweat and tears, our hopes and fears\nBound up with shuttering jams\n\nI was tall and true, all of six-foot-two\n'Til they broke me across my back\nBy a name I'm known and it's not my own\nThey call me Crooked Jack\n\nAnd I've seen old men before their time\nTheir faces drawn and gray\nBut I ain't never thought so soon would mine\nBe lined in that self same way\n\nAnd I was tall and true, all of six-foot-two\nBut they broke me across the back\nAnd by a name I'm known, it's not my own\nThey call me Crooked Jack\n\nThey say that honest toil is good\nFor the body and the soul\nBut believe me boys, it's for sweat and blood\nThat they want you down a hole",
+    "notes": "Two hard beats per chord",
+    "tags": [
+      "Irish"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.1,
+      "chordScale": 1.3
+    }
+  },
+  {
+    "id": "idmu260srymha49r",
+    "title": "Deep Ellum Blues",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "D",
+            "D",
+            "D",
+            "D7"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "G",
+            "G",
+            "D",
+            "D"
+          ],
+          [
+            "A",
+            "A7",
+            "A7/G",
+            "D"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "When you go down in Deep Elem\nJust to have a little fun\nBetter have fifteen dollars\nWhen that policeman come\n\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n\nWhen you go down in Deep Elem\nPut you money in your pants\nThose Deep Elem women\nThey don’t give a man a chance\n\nWhen you go down to Deep Elem\nPut your money in your socks\nThem Deep Elem women\nThey will throw you on the rocks\n\nI used to know a preacher\nPreached the bible through and through\nHe went down to Deep Elem\nGot them Deep Elem blues\n\nNow once I had a sweetheart\nMeant the world to me\nWent down to Deep Elem\nShe ain’t what she used to be",
+    "notes": "",
+    "tags": [],
+    "layout": {
+      "columns": "side",
+      "scale": 1.2,
+      "chordScale": 1.5
+    }
   },
   {
     "id": "idmtz9vqglpons3q",
@@ -1241,6 +1408,69 @@
     ]
   },
   {
+    "id": "idmu25kogqixa1pz",
+    "title": "Heaven's Just a Sin Away",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "D",
+            "D",
+            "G",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "E",
+            "A"
+          ],
+          [
+            "D",
+            "D",
+            "G",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "A",
+            "D"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "G",
+            "G",
+            "D",
+            "D"
+          ],
+          [
+            "G",
+            "G",
+            "A",
+            "A"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "Heaven's just a sin away oh, whoa\nJust a sin away\nI can't wait another day\nI think I'm givin' in\n\nThough I'd love to hold you tight\nOh, whoa and Be with you tonight\nBut that still won't make it right\n'cause I belong to him\n\nOh, way down deep inside\nI know that it's all wrong\nYour eyes keep tempting me\nAnd I never was that strong- ong\n\nOh, devil's got me now\nOh, whoa gone and got me now\nI can't fight him anyhow\nI think he's gonna win\n\nHeaven's just a sin away\nOh, whoa\nJust a sin away\nHeaven help me when I say\nI think I'm givin' in ",
+    "notes": "",
+    "tags": [
+      "Country",
+      "Fast"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.5,
+      "chordScale": 1.2
+    }
+  },
+  {
     "id": "idmtz9vqgl03frnx",
     "title": "Hello Trouble",
     "sections": [
@@ -1324,6 +1554,57 @@
     "tags": [
       "Abby"
     ]
+  },
+  {
+    "id": "idmu25gu60jk57mb",
+    "title": "How Mountain Girls Can Love",
+    "sections": [
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "D",
+            "A",
+            "E",
+            "A"
+          ],
+          [
+            "D",
+            "A",
+            "E",
+            "A"
+          ]
+        ]
+      },
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "A",
+            "A",
+            "E",
+            "A"
+          ],
+          [
+            "A",
+            "A",
+            "E",
+            "A"
+          ]
+        ]
+      }
+    ],
+    "lyrics": " Get down boys, go back home\n   Back to the girl you love\n   Treat her right, never wrong\n   How mountain girls can love\n\nRiding the night in the high cold winds\nOn the trail of the old lonesome pine\nThinking of you, feeling so blue\nWondering why you left me behind\n\nRemember the night we strolled down the lane\nOur hearts were much happier then\nYou whispered to me as I held you close\nYou hoped this night would never end",
+    "notes": "",
+    "tags": [
+      "Bluegrass",
+      "Fast"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.6,
+      "chordScale": 1
+    }
   },
   {
     "id": "idmtzbosj0rrx64j",
@@ -1646,6 +1927,85 @@
     "tags": [
       "Abby"
     ]
+  },
+  {
+    "id": "idmu25wfmgwvjdgp",
+    "title": "If you've got the money honey",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "C",
+            "C",
+            "C",
+            "C"
+          ],
+          [
+            "C",
+            "C",
+            "C",
+            "F"
+          ],
+          [
+            "G",
+            "G",
+            "G",
+            "G"
+          ],
+          [
+            "G",
+            "G",
+            "G",
+            "C"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "If you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nWe'll make all the night spots, dance, drink beer and wine\nIf you've got the money, honey, I've got the time\n\nThere ain't no use to tarry, so let's start out tonight\nWe'll spread joy, oh boy, oh boy, and we'll spread it right\nWe'll have more fun, baby, all the way down the line\nIf you've got the money, honey, I've got the time\n\nIf you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nBring along your Cadillac, leave my old wreck behind\nIf you've got the money, honey, I've got the time\n\nIf you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nBut if you run short of money, I'll run short of time\n'Cause you with no more money, honey, I've no more time",
+    "notes": "",
+    "tags": [
+      "Country",
+      "Fast"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1.4,
+      "chordScale": 1
+    }
+  },
+  {
+    "id": "idmu25o3o483cvo8",
+    "title": "It Rains Everywhere I Go",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "C",
+            "F/C",
+            "F",
+            "G7"
+          ],
+          [
+            "C",
+            "F/C",
+            "Am/G7",
+            "C"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "The sun used to always shine\nWhen love was here when you were mine\nThe weather always looked so fine\nNow it rains everywhere I go\n\nI thought I had the perfect love\nBlue skies and stars above\nThat's the way it is when you're in love\nNow it rains everywhere I go\n\nIt rains everywhere I go\nThe storms appear and the winds they blow\nI got nothing but trouble to show\n'Cause it rains everywhere I go\n\nI never saw a cloudy day\nUntil the day you went away\nA black cloud came to stay\nIt's been raining on me every day\n\nThey say the sun will shine again\nWell I'll believe it but I don't know when\nI guess I'll stay inside 'til then\n'Cause it rains everywhere I go",
+    "notes": "",
+    "tags": [
+      "Country"
+    ],
+    "layout": {
+      "columns": 2,
+      "scale": 1.3,
+      "chordScale": 1.6
+    }
   },
   {
     "id": "idmtz9vqgljhvmht",
@@ -3741,6 +4101,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    }
+    },
+    "tags": []
   }
 ]
