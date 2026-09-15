@@ -180,6 +180,63 @@
     }
   },
   {
+    "id": "idmu30ywmc9xxhhu",
+    "title": "Angeline the Baker",
+    "sections": [
+      {
+        "label": "Vamp D to start",
+        "rows": [
+          [
+            "D",
+            "D",
+            "D",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "D/A",
+            "D"
+          ],
+          [
+            "",
+            "",
+            "",
+            "x2"
+          ]
+        ]
+      },
+      {
+        "label": "Part B",
+        "rows": [
+          [
+            "D",
+            "C",
+            "G",
+            "D"
+          ],
+          [
+            "D",
+            "C",
+            "G",
+            "A!"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "",
+    "notes": "",
+    "tags": [
+      "Fiddle Tune",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1,
+      "chordScale": 2.2
+    }
+  },
+  {
     "id": "idmtz9vqgl8pr3gp",
     "title": "April Come She Will",
     "sections": [
@@ -1326,6 +1383,52 @@
       "Slow",
       "Mountain"
     ]
+  },
+  {
+    "id": "idmu31b5br8y2alx",
+    "title": "Go Rest High on that Mountain",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "C",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "C",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "G",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "I know your life on earth was troubled\nAnd only you could know the pain\nYou weren't afraid to face the devil\nYou were no stranger to the rain\n\nSo go rest high on that mountain\nSon, your work on earth is done\nGo to heaven a-shoutin'\nLove for the Father and the Son\n\nOh, how we cried the day you left us\nWe gathered round your grave to grieve\nWish I could see the angels’ faces\nWhen they hear your sweet voice sing",
+    "notes": "Vince Gill 1995",
+    "tags": [
+      "Bluegrass",
+      "Church"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.6,
+      "chordScale": 1.1
+    }
   },
   {
     "id": "idmtz9vqglqo6g2r",
@@ -2527,6 +2630,53 @@
     ]
   },
   {
+    "id": "idmu3173rk2f2uy6",
+    "title": "Little Mountain Church House",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "G",
+            "C",
+            "C"
+          ],
+          [
+            "G",
+            "G",
+            "D",
+            "D"
+          ],
+          [
+            "G",
+            "G",
+            "C",
+            "C"
+          ],
+          [
+            "G",
+            "D",
+            "G",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "There's a little mountain church in my thoughts of yesterday\nWhere friends and family gathered for the Lord\nWhere an ol' fashioned preacher taught the straight and narrow way\nFor what few coins the congregation could afford\n\nDressed in all our Sunday best, we sat on pews of solid oak\nAnd I remember how our voices filled the air\nHow Mama sounded like an angel on those high soprano notes\nAnd \"When the Roll is Called Up Yonder I'll Be There\"\n\nLooking back now that little mountain church house\nHas become my lifes cornerstone\nIt was there in that little mountain church house\nI first heard the words I based my life upon\n\nAt the all day Sunday singing, with dinner on the ground\nMany were the souls that were revived\nWhile the brothers and the sisters who've gone on to Gloryland\nSlept in peace in the maple grove nearby",
+    "notes": "",
+    "tags": [
+      "Bluegrass",
+      "Abby",
+      "Church"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1.4,
+      "chordScale": 1.1
+    }
+  },
+  {
     "id": "idmu2v1ljw4esgpe",
     "title": "Lonesome John",
     "sections": [
@@ -2732,6 +2882,80 @@
     ]
   },
   {
+    "id": "idmu312y5bq1s2gh",
+    "title": "Mama Tried",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "D",
+            "G",
+            "D",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "A",
+            "A"
+          ],
+          [
+            "D",
+            "G",
+            "D",
+            "G"
+          ],
+          [
+            "D",
+            "A",
+            "D",
+            "D"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "D/G/D",
+            "G",
+            "D",
+            "D"
+          ],
+          [
+            "Bm",
+            "Bm",
+            "A",
+            "A"
+          ],
+          [
+            "D/G/D",
+            "G",
+            "D",
+            "D"
+          ],
+          [
+            "D",
+            "A",
+            "A",
+            "A"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "The first thing I remember knowin'\nWas a lonesome whistle blowin'\nAnd a young'n's dream of growing up to ride\nOn a freight train leaving town\nNot knowing where I'm bound\nAnd no one could change my mind, but mama tried\n\nA one and only rebel child\nFrom a family meek and mild\nMy mama seemed to know what lay in store\nDespite all my Sunday learnin'\nTowards the bad I kept on turnin'\n'Til mama couldn't hold me anymore\n\nAnd I turned twenty-one in prison, doing life without parole\nNo one could steer me right, but mama tried, mama tried\nMama tried to raise me better, but her pleading I denied\nThat leaves only me to blame, 'cause mama tried\n\nDear old daddy, rest his soul\nLeft my mom a heavy load\nShe tried so very hard to fill his shoes\nWorking hours without rest\nWanted me to have the best\nShe tried to raise me right, but I refused",
+    "notes": "Merle Haggard 1968",
+    "tags": [
+      "Country"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.2,
+      "chordScale": 1
+    }
+  },
+  {
     "id": "idmtz9vqgl9ykdrb",
     "title": "Me and Bobby McGee",
     "sections": [
@@ -2869,6 +3093,40 @@
     ]
   },
   {
+    "id": "idmu314za6xonojs",
+    "title": "Miss Monahan",
+    "sections": [
+      {
+        "label": "Part A and Part B both",
+        "rows": [
+          [
+            "D",
+            "G",
+            "D",
+            "A/D"
+          ],
+          [
+            "D",
+            "G",
+            "D/G",
+            "A/D"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "",
+    "notes": "",
+    "tags": [
+      "Fiddle Tune",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1,
+      "chordScale": 2.2
+    }
+  },
+  {
     "id": "idmtz9vqgl7v3rye",
     "title": "My Heart Skips a Beat",
     "sections": [
@@ -2896,6 +3154,75 @@
       "Country",
       "Fast"
     ]
+  },
+  {
+    "id": "idmu30w6bugl0wgx",
+    "title": "Nuage",
+    "sections": [
+      {
+        "label": "Part A",
+        "rows": [
+          [
+            "Eb",
+            "Am",
+            "D7",
+            "G"
+          ],
+          [
+            "",
+            "",
+            "",
+            "x2"
+          ],
+          [
+            "B7",
+            "Em",
+            "A/Ab/A",
+            "D"
+          ]
+        ]
+      },
+      {
+        "label": "Part B",
+        "rows": [
+          [
+            "Eb",
+            "Am",
+            "D7",
+            "G"
+          ],
+          [
+            "Ab",
+            "Dm",
+            "G7",
+            "C"
+          ],
+          [
+            "Cm",
+            "Cm",
+            "G",
+            "G"
+          ],
+          [
+            "Eb",
+            "Am7",
+            "D7",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "Eb is D pitched up one half step\n\nor Eb and Ab can both be in A7 shape:\n\nEb → A7-shape, xx8889\n\nAb7 → xx1112\n\nA/Ab/A →xx2223::xx1112::xx2223\n\nCm → Bm shape half step pitched up",
+    "notes": "",
+    "tags": [
+      "Blues",
+      "Fiddle Tune"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1.5,
+      "chordScale": 1
+    }
   },
   {
     "id": "idmtzdf7ewjnmwos",
