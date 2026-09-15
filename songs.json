@@ -74,7 +74,7 @@
       }
     ],
     "lyrics": "Charlie's got a gold watch\nDon't seem like a whole lot\nAfter thirty years of driving up and down the interstate\nBut Charlie's had a good life\nAnd Charlie's got a good wife\nAnd after tonight she'll no longer be counting the days\n\nEighteen wheels and a dozen roses\nTen more miles on his four-day run\nA few more songs from the all-night radio\nThen he'll spend the rest of his life with the one that he loves\n\nThey'll buy a Winnebago\nSet out to find America\nThey'll do a lot of catching up a little at a time\nWith pieces of the old dream\nThey're gonna light the old flame\nDoing what they please, leaving every other reason behind",
-    "notes": "Country, Abby",
+    "notes": "Recorded by Kathy Mattea in 1987. Hit #1 on country charts in 1988.",
     "layout": {
       "columns": "side",
       "scale": 1.4,
@@ -82,8 +82,102 @@
     },
     "tags": [
       "Abby",
-      "Modern"
+      "Modern",
+      "Country",
+      "Fast"
     ]
+  },
+  {
+    "id": "idmu2vf95grpy6kw",
+    "title": "Ain't Nobody Here But Us Chickens",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "G",
+            "G7",
+            "G7"
+          ],
+          [
+            "C",
+            "C",
+            "G7!",
+            "D7"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "G",
+            "G",
+            "G7",
+            "G7"
+          ],
+          [
+            "C",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "D",
+            "D7",
+            "G/C",
+            "G/D7"
+          ]
+        ]
+      },
+      {
+        "label": "Bridge",
+        "rows": [
+          [
+            "C",
+            "G",
+            "C",
+            "G"
+          ],
+          [
+            "A",
+            "A7",
+            "D7!",
+            "D7"
+          ]
+        ]
+      },
+      {
+        "label": "End",
+        "rows": [
+          [
+            "C",
+            "D",
+            "G",
+            "E7"
+          ],
+          [
+            "C",
+            "D",
+            "G",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "One night farmer Brown was takin' the air\nLocked up the barnyard with the greatest of care\nDown in the hen house, somethin' stirred\nWhen he shouted, \"Who's there?\"\nThis is what he heard\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nSo calm yourself, and stop that fuss\nThere ain't nobody here but us\nWe chickens tryin' to sleep and you bust in\nAnd hobble hobble hobble hobble with your chin\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nYou're stompin' around and shakin' the ground\nYou're kickin' up an awful fuss\nWe chickens tryin' to sleep and you bust in\nAnd hobble, hobble hobble hobble, it's a sin\n\nTomorrow is a busy day\nWe got things to do, we got eggs to lay\nWe got ground to dig and worms to scratch\nIt takes a lot of settin', gettin' chicks to hatch\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nSo quiet yourself, and stop that fuss\nThere ain't nobody here at all\nKindly point that yourself the other way\nAnd hobble, hobble, hobble and hit the hay\n",
+    "notes": "Louis Jordan and his Tympany Five recorded the song on June 26, 1946",
+    "tags": [
+      "Blues",
+      "Kim",
+      "Fast"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.1,
+      "chordScale": 1.2
+    }
   },
   {
     "id": "idmtz9vqgl8pr3gp",
@@ -126,7 +220,7 @@
       }
     ],
     "lyrics": "April, come she will\nWhen streams are ripe and swelled with rain\nMay, she will stay\nResting in my arms again\nJune, she'll change her tune\nIn restless walks she'll prowl the night\nJuly, she will fly\nAnd give no warning to her flight\nAugust, die she must\nThe autumn winds blow chilly and cold\nSeptember, I remember\nA love once new has now grown old\n",
-    "notes": "",
+    "notes": "Simon and Garfunkel 1966. Based on the English Folk Tune about the Cuckoo bird.",
     "layout": {
       "columns": "auto",
       "scale": 1.4,
@@ -134,7 +228,8 @@
     },
     "tags": [
       "Folk",
-      "Abby"
+      "Abby",
+      "Slow"
     ]
   },
   {
@@ -206,12 +301,16 @@
       }
     ],
     "lyrics": "She went back to Wichita\nShe went back to her ma and pa\nReckon I saw her next to my truck\nPumping gas with the car packed up.\n\nWe talked as neighbors will\nThere waiting for the tanks to fill\nWe talked about nothing\nhow it might snow\nHow far she had to go\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.\n\nShe came in ’85\nShe came here as a July bride\nBut it never got easy\nnever got rich\nAin’t got much but what she came here with.\n\nGood times have all been spent\nShe ain’t broken but she’s badly bent\nThere’s nothing she wants here\nnothing that shines\nShe’s made up her mind.\n\nShe says for all my time\nwell I ain’t got much to show\nYou can tell that man of mine and anyone who wants to know\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.\n",
-    "notes": "",
+    "notes": "Gillian Welch ‧ 2002",
     "layout": {
       "columns": "side",
       "scale": 1,
       "chordScale": 1.8
-    }
+    },
+    "tags": [
+      "Country",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzer0b4z27vc6",
@@ -253,7 +352,7 @@
       }
     ],
     "lyrics": "They paved paradise\nPut up a parking lot\nWith a pink hotel, a boutique\nAnd a swinging hot spot\n\nDon't it always seem to go\nThat you don't know what you've got 'til it's gone?\nThey paved paradise\nPut up a parking lot\n\nThey took all the trees\nPut 'em in a tree museum\nThen they charged the people\nA dollar and a half just to see 'em\n\nHey, farmer, farmer\nPut away that DDT now\nGive me spots on my apples\nBut leave me the birds and the bees\n\nLate last night I heard the screen door slam\nAnd a big yellow taxi took away my old man",
-    "notes": "",
+    "notes": "1970 Joni Mitchell",
     "layout": {
       "columns": "side",
       "scale": 1.4,
@@ -261,7 +360,8 @@
     },
     "tags": [
       "Folk",
-      "Abby"
+      "Abby",
+      "Fast"
     ]
   },
   {
@@ -287,14 +387,17 @@
       }
     ],
     "lyrics": "There’s a well beaten path in the old mountainside\nWhere I wandered when I was a lad\nAnd I wandered alone to the place I call home\nIn those Blueridge hills far away\n\n   Oh I love those hills of old Virginia\n   From those Blueridge hills I did roam\n   When I die won’t you bury me on the mountain\n   Far away near my Blueridge mountain home\n\nNow my thoughts wander back to that ramshackle shack\nIn those blue ridge hills far away\nWhere my mother and dad were laid there to rest\nThey are sleeping in peace together there\n\nI return to that old cabin home with the sigh\nI’ve been longing for days gone by\nWhen I die won’t you bury me on that old mountain side\nMake my resting place upon the hills so high",
-    "notes": "",
+    "notes": "Blueridge Cabin Home, written by Flatt and Scruggs 1955",
     "layout": {
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.5
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow",
+      "Mountain",
+      "Bluegrass"
     ]
   },
   {
@@ -401,7 +504,7 @@
       }
     ],
     "lyrics": "\nCalm that wicked wind to pick you up and carry you off eastward\nThough I did release you for to seek a warmer sky\nShould you be blown back know that I will always run to greet you\nStill surprised to catch you every time\n\nArmed with this small butterfly net only\nI will face the world alone and never be lonely\nSo calm that wicked wind and if you go, you could be gone forever\nI will wait a while here by and by and by and by\n\nUp and up you go for to steal the secrets of the heavens\nWill you share them with me my bright and brilliant spy?\nShould you be blown back know that I will always run to greet you\nStill surprised to catch you every time\n\nStill surprised to catch you by and by and by and by",
-    "notes": "",
+    "notes": "Bishop Allen, 2006",
     "layout": {
       "columns": "side",
       "scale": 1.3,
@@ -410,7 +513,8 @@
     "tags": [
       "Folk",
       "Modern",
-      "Abby"
+      "Abby",
+      "Slow"
     ]
   },
   {
@@ -472,7 +576,9 @@
     },
     "tags": [
       "Kim",
-      "Original"
+      "Original",
+      "Blues",
+      "Fast"
     ]
   },
   {
@@ -518,12 +624,59 @@
     "notes": "",
     "tags": [
       "Original",
-      "Kim"
+      "Kim",
+      "Blues",
+      "Fast"
     ],
     "layout": {
       "columns": "side",
       "scale": 1,
       "chordScale": 1.5
+    }
+  },
+  {
+    "id": "idmu2vmxn8l4caq2",
+    "title": "Choo Choo Ch'Boogie",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "G",
+            "C7",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "G",
+            "G"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "C7",
+            "G",
+            "C7",
+            "D"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "Headin' for the station with a pack on my back\nTired of transportation in the back of a hack\nI love to hear the rhythm of the clickety-clack\nHear the lonesome whistle, see the smoke from the stack\nPal around with Democratic fellows named Mac\nTake me right back to the track, Jack\n\nChoo choo, choo choo ch'boogie\nWoo woo, woo woo ch'boogie\nChoo choo, choo choo ch'boogie\nTake me right back to the track, Jack\n\nYou reach your destination but alas in a lack\nYou need some compensation to get back in the black\nYou take a morning paper from the top of the rack\nAnd read the situation from the front to the back\nThe only job that's open needs a man with a knack\nYou put it right back in the rack, Jack\n\nGonna settle down by the railroad track\nLive the life of Riley in the beaten-down shack\nSo when I hear the whistle I can peep through the crack\nAnd watch the train a-rollin' when it's ballin' the jack\nI just love the rhythm of the clickety-clack\nTake me right back to the track, Jack",
+    "notes": "January 1946 by Louis Jordan & His Tympany Five",
+    "tags": [
+      "Gary",
+      "Blues"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.2,
+      "chordScale": 1.1
     }
   },
   {
@@ -749,7 +902,10 @@
     ],
     "lyrics": "When you go down in Deep Elem\nJust to have a little fun\nBetter have fifteen dollars\nWhen that policeman come\n\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n\nWhen you go down in Deep Elem\nPut you money in your pants\nThose Deep Elem women\nThey don’t give a man a chance\n\nWhen you go down to Deep Elem\nPut your money in your socks\nThem Deep Elem women\nThey will throw you on the rocks\n\nI used to know a preacher\nPreached the bible through and through\nHe went down to Deep Elem\nGot them Deep Elem blues\n\nNow once I had a sweetheart\nMeant the world to me\nWent down to Deep Elem\nShe ain’t what she used to be",
     "notes": "",
-    "tags": [],
+    "tags": [
+      "Blues",
+      "Fast"
+    ],
     "layout": {
       "columns": "side",
       "scale": 1.2,
@@ -882,7 +1038,8 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country"
     ]
   },
   {
@@ -1002,7 +1159,9 @@
       "chordScale": 1.4
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Blues",
+      "Fast"
     ]
   },
   {
@@ -1064,7 +1223,8 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow"
     ]
   },
   {
@@ -1115,7 +1275,8 @@
     },
     "tags": [
       "Kim",
-      "Fiddle Tune"
+      "Fiddle Tune",
+      "Fast"
     ]
   },
   {
@@ -1161,7 +1322,9 @@
     },
     "tags": [
       "Abby",
-      "Bluegrass"
+      "Bluegrass",
+      "Slow",
+      "Mountain"
     ]
   },
   {
@@ -1233,7 +1396,8 @@
     },
     "tags": [
       "Abby",
-      "Original"
+      "Original",
+      "Fast"
     ]
   },
   {
@@ -1281,7 +1445,11 @@
       "columns": "auto",
       "scale": 1.3,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Country",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl24vpbe",
@@ -1354,7 +1522,11 @@
       "chordScale": 1.4
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Folk",
+      "Slow",
+      "Mountain",
+      "Church"
     ]
   },
   {
@@ -1404,7 +1576,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Blues"
     ]
   },
   {
@@ -1552,7 +1726,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Fast"
     ]
   },
   {
@@ -1598,7 +1774,8 @@
     "notes": "",
     "tags": [
       "Bluegrass",
-      "Fast"
+      "Fast",
+      "Mountain"
     ],
     "layout": {
       "columns": "side",
@@ -1648,7 +1825,10 @@
       "chordScale": 1.4
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Blues",
+      "Fast"
     ]
   },
   {
@@ -1731,7 +1911,7 @@
         ]
       }
     ],
-    "lyrics": "Who knows how long I've loved you\r\nYou know I love you still\r\nWill I wait a lonely lifetime\r\nIf you want me to, I will\r\n\r\nFor if I ever saw you\r\nI didn't catch your name\r\nBut it never really mattered\r\nI will always feel the same\r\n\r\nLove you forever and forever\r\nLove you with all my heart\r\nLove you whenever we're together\r\nLove you when we're apart\r\n\r\nAnd when at last I find you\r\nYour song will fill the air\r\nSing it loud so I can hear you\r\nMake it easy to be near you\r\nFor the things you do endear you to me\r\nOh, you know I will\r",
+    "lyrics": "Who knows how long I've loved you\nYou know I love you still\nWill I wait a lonely lifetime\nIf you want me to, I will\n\nFor if I ever saw you\nI didn't catch your name\nBut it never really mattered\nI will always feel the same\n\nLove you forever and forever\nLove you with all my heart\nLove you whenever we're together\nLove you when we're apart\n\nAnd when at last I find you\nYour song will fill the air\nSing it loud so I can hear you\nMake it easy to be near you\nFor the things you do endear you to me\nOh, you know I will\n",
     "notes": "",
     "layout": {
       "columns": "auto",
@@ -1739,7 +1919,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow",
+      "Modern"
     ]
   },
   {
@@ -1782,7 +1964,12 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Country",
+      "Slow",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzbv1rmvvxusb",
@@ -1830,12 +2017,16 @@
       }
     ],
     "lyrics": "Born in the mountain\nFifty years ago\nTrod the hills and valleys\nThrough the rain and snow\nSeen the lightning flashing\nI've heard thunder roll\n\nI've endured\nI've endured\nHow long can one endure?\n\nBarefoot in the summer\nOn into the fall\nToo many mouths to feed\nThey couldn't clothe us all\nSent to church on Sunday\nTo learn the golden rule...\n\nI've worked for the rich\nI've lived with the poor\nI've seen many a heartache\nThere'll be many more\nI've lived, loved, and sorrowed\nBeen to success's door...",
-    "notes": "",
+    "notes": "Written by Ola Belle Reed. Covered by Del McCoury in 1970",
     "layout": {
       "columns": "side",
-      "scale": 1.4,
-      "chordScale": 1
-    }
+      "scale": 1.5,
+      "chordScale": 1.3
+    },
+    "tags": [
+      "Kim",
+      "Mountain"
+    ]
   },
   {
     "id": "idmtz9vqglt5ohdw",
@@ -1925,7 +2116,9 @@
       "chordScale": 1.3
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Folk",
+      "Fast"
     ]
   },
   {
@@ -2078,7 +2271,9 @@
       "chordScale": 1.5
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Bluegrass",
+      "Church"
     ]
   },
   {
@@ -2213,8 +2408,71 @@
       "chordScale": 1.1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Folk",
+      "Slow"
     ]
+  },
+  {
+    "id": "idmu2unuwiu0rywl",
+    "title": "Leatherwing Bat",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "Am",
+            "C"
+          ],
+          [
+            "G",
+            "Em"
+          ],
+          [
+            "Am",
+            "Am/G..."
+          ],
+          [
+            "E",
+            "Am"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "F",
+            "C"
+          ],
+          [
+            "G",
+            "Am"
+          ],
+          [
+            "F",
+            "C/Am..."
+          ],
+          [
+            "(Am/Em",
+            "Am) x2"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "\"I\" said the little leatherwing bat\n\"I'll tell to you the reason that\nThe reason that I fly by night\nIs because I've lost my heart's delight.\"\n\nHowdy dowdy diddle-dum day\nHowdy dowdy diddle-dum day\nHowdy dowdy diddle-dum day\nHey di-lee di-li di-lo\n\n\"I\" said the blackbird sittin' on a chair\n\"Once I courted a lady, fair\nShe proved fickle and turned her back\nAnd ever since then I've dressed in black.\"\n\n\"I\" said the woodpecker sittin' on a fence\n\"Once I courted a handsome wench\nShe got scared and from me fled\nAnd ever since then my head's been red.\"\n\n\"I\" said the little turtle dove\n\"I'll tell you how to win her love\nCourt her night and court her day\nNever give her reason to say o-neigh!\"",
+    "notes": "\"The Bird Courting Song\" dates back to 17th century England. It migrated to Appalachia and was later recorded by many folk artists such as Burl Ives, Pete Seeger, and the Muppets. Our version is the one by Peter, Paul, and Mary",
+    "tags": [
+      "Fast",
+      "Folk",
+      "Kim",
+      "Mountain"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.3,
+      "chordScale": 1
+    }
   },
   {
     "id": "idmtzebi36bweoi1",
@@ -2261,6 +2519,62 @@
       "columns": "side",
       "scale": 1,
       "chordScale": 1.5
+    },
+    "tags": [
+      "Country",
+      "Fast",
+      "Modern"
+    ]
+  },
+  {
+    "id": "idmu2v1ljw4esgpe",
+    "title": "Lonesome John",
+    "sections": [
+      {
+        "label": "Part A",
+        "rows": [
+          [
+            "Am",
+            "Am",
+            "Am",
+            "G"
+          ],
+          [
+            "Am",
+            "Am",
+            "Am/G",
+            "Am"
+          ]
+        ]
+      },
+      {
+        "label": "Part B",
+        "rows": [
+          [
+            "Am",
+            "Am",
+            "Am",
+            "G"
+          ],
+          [
+            "Am",
+            "Dm",
+            "Am/G",
+            "Am"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "",
+    "notes": "",
+    "tags": [
+      "Fiddle Tune",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1,
+      "chordScale": 2.2
     }
   },
   {
@@ -2291,6 +2605,45 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
+    },
+    "tags": [
+      "Kim",
+      "Mountain"
+    ]
+  },
+  {
+    "id": "idmu2vuy2cw44gln",
+    "title": "Lost River",
+    "sections": [
+      {
+        "label": "Verse + Chorus",
+        "rows": [
+          [
+            "G",
+            "G",
+            "C",
+            "G"
+          ],
+          [
+            "D7",
+            "C",
+            "D7",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "There's a lost river that flows in a valley where no one goes,\nWhere the wild water's rush rumbles deep in the hush.\nI'm gone far from there now, but I'll be back somehow\nTo where the lost river winds in the shadow of the pines\n\nOh, lost river, now I'm coming back\nTo the pot-belly stove, where the firewood's all stacked\nOh Quebec girl, go with me, my bell, my fleur de lis,\nWhere the lost river winds in the shadow of the pines\n\nNow every body knows where that lost river flows\nIt's someplace he's lost behind bridges that he's crossed\nWell, he'd like to return, but his bridges are all burned\nAnd he's much too far down to return to higher ground\n\nOh lost river, far over the ridge\nNow is it too late for me to build me a new bridge?\nTo the bright golden time when her love was still mine\nAnd the world was still wild like the heart of a child",
+    "notes": "The song \"Lost River\" was written by Michael Martin Murphey in 1982. Covered by the Nitty Gritty Dirt Band 1989.",
+    "tags": [
+      "Bluegrass",
+      "Modern",
+      "Abby"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1.3,
+      "chordScale": 1.6
     }
   },
   {
@@ -2371,7 +2724,12 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Original",
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl9ykdrb",
@@ -2442,7 +2800,9 @@
       "chordScale": 1.4
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Modern"
     ]
   },
   {
@@ -2502,7 +2862,11 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.1
-    }
+    },
+    "tags": [
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl7v3rye",
@@ -2528,7 +2892,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Fast"
     ]
   },
   {
@@ -2613,7 +2979,8 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country"
     ]
   },
   {
@@ -2669,7 +3036,11 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Slow",
+      "Church"
+    ]
   },
   {
     "id": "idmtz9vqglwzq1p0",
@@ -2711,7 +3082,11 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.6
-    }
+    },
+    "tags": [
+      "Original",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl0u0xda",
@@ -2782,7 +3157,11 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.3
-    }
+    },
+    "tags": [
+      "Original",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl16eoes",
@@ -2888,8 +3267,74 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Fast",
+      "Mountain"
     ]
+  },
+  {
+    "id": "idmu2vi8d2lymzwn",
+    "title": "Red Wing",
+    "sections": [
+      {
+        "label": "Part A",
+        "rows": [
+          [
+            "G",
+            "G",
+            "C",
+            "G"
+          ],
+          [
+            "C",
+            "G",
+            "A",
+            "D"
+          ],
+          [
+            "G",
+            "G",
+            "C",
+            "G"
+          ],
+          [
+            "C",
+            "G",
+            "A/D",
+            "G"
+          ]
+        ]
+      },
+      {
+        "label": "Part B x2",
+        "rows": [
+          [
+            "C",
+            "C",
+            "G",
+            "G"
+          ],
+          [
+            "D",
+            "D",
+            "G",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "",
+    "notes": "",
+    "tags": [
+      "Fiddle Tune",
+      "Bluegrass",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1,
+      "chordScale": 2.2
+    }
   },
   {
     "id": "idmtz9vqglb7vx3l",
@@ -2921,7 +3366,8 @@
       "chordScale": 1.6
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Mountain"
     ]
   },
   {
@@ -2994,7 +3440,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Fast"
     ]
   },
   {
@@ -3027,8 +3475,74 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow",
+      "Mountain"
     ]
+  },
+  {
+    "id": "idmu2w49lavl1fj6",
+    "title": "Someday Soon",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "Em",
+            "C",
+            "G"
+          ],
+          [
+            "Bm",
+            "Bm",
+            "C",
+            "D"
+          ],
+          [
+            "G",
+            "Em",
+            "C",
+            "G"
+          ],
+          [
+            "Am",
+            "D7",
+            "G",
+            "G"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "D",
+            "D",
+            "C",
+            "G"
+          ],
+          [
+            "Em",
+            "Em",
+            "A7",
+            "D7"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "There's a young man that I know, his age is twenty-one\nComes from down in southern Colorado\nJust out of the service and he's looking for his fun\nSomeday soon, going with him someday soon\n\nMy parents cannot stand him 'cause he rides the rodeo\nMy father says that he will leave me cryin'\nI would follow him right down the toughest road I know\nSomeday soon, going with him someday soon\n\nAnd when he comes to call, my pa ain't got a good word to say\nGuess it's 'cause he's just as wild in the younger days\n\nSo blow, you old blue northern, blow my love to me\nHe's driving in tonight from California\nHe loves his damned old rodeo as much as he loves me\nSomeday soon, going with him someday soon",
+    "notes": "Originally recorded by the folk duo Ian & Sylvia in 1964. Covered by Judy Collins in 1968.",
+    "tags": [
+      "Abby",
+      "Folk",
+      "Slow"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.2,
+      "chordScale": 1.3
+    }
   },
   {
     "id": "idmtz9vqglf4h86b",
@@ -3054,7 +3568,8 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country"
     ]
   },
   {
@@ -3083,8 +3598,8 @@
             "Em/A"
           ],
           [
-            "G",
-            "C",
+            "check: G",
+            "Em",
             "Am",
             "Em"
           ]
@@ -3097,7 +3612,12 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Slow",
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzbms8myecw4g",
@@ -3140,7 +3660,10 @@
       "chordScale": 1.5
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Folk",
+      "Slow"
     ]
   },
   {
@@ -3212,7 +3735,10 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Mountain"
+    ]
   },
   {
     "id": "idmtz9vqglfotm5z",
@@ -3271,7 +3797,12 @@
       "columns": "auto",
       "scale": 1.2,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Original",
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzd8r9fglk23t",
@@ -3315,7 +3846,8 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country"
     ]
   },
   {
@@ -3358,7 +3890,10 @@
       "columns": "auto",
       "scale": 1.5,
       "chordScale": 1.4
-    }
+    },
+    "tags": [
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgls74d7y",
@@ -3397,7 +3932,10 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Mountain"
+    ]
   },
   {
     "id": "idmtzdid9lurtzw6",
@@ -3458,7 +3996,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow",
+      "Modern"
     ]
   },
   {
@@ -3530,7 +4070,12 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    }
+    },
+    "tags": [
+      "Country",
+      "Blues",
+      "Fast"
+    ]
   },
   {
     "id": "idmtz9vqgly2mn0g",
@@ -3589,7 +4134,9 @@
       "chordScale": 1.3
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Modern"
     ]
   },
   {
@@ -3645,7 +4192,10 @@
       "chordScale": 1.6
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Original",
+      "Blues",
+      "Fast"
     ]
   },
   {
@@ -3695,7 +4245,8 @@
       "chordScale": 2.2
     },
     "tags": [
-      "Fiddle Tune"
+      "Fiddle Tune",
+      "Fast"
     ]
   },
   {
@@ -3743,7 +4294,12 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.3
-    }
+    },
+    "tags": [
+      "Country",
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzcmb6fih0id1",
@@ -3802,7 +4358,12 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Country",
+      "Blues",
+      "Fast"
+    ]
   },
   {
     "id": "idmtz9vqgl51rv29",
@@ -3849,7 +4410,9 @@
       "chordScale": 1
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Slow",
+      "Mountain"
     ]
   },
   {
@@ -3940,7 +4503,9 @@
       "chordScale": 1.3
     },
     "tags": [
-      "Abby"
+      "Abby",
+      "Country",
+      "Slow"
     ]
   },
   {
@@ -3976,7 +4541,11 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    }
+    },
+    "tags": [
+      "Blues",
+      "Folk"
+    ]
   },
   {
     "id": "idmtz9vqglf4ku5r",
@@ -4018,7 +4587,13 @@
       "columns": 2,
       "scale": 1.2,
       "chordScale": 1.7
-    }
+    },
+    "tags": [
+      "Cajun",
+      "Blues",
+      "Fast",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl0w3fmf",
@@ -4065,7 +4640,12 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Country",
+      "Blues",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl642zzx",
@@ -4102,6 +4682,10 @@
       "scale": 1.3,
       "chordScale": 1.2
     },
-    "tags": []
+    "tags": [
+      "Blues",
+      "Fast",
+      "Kim"
+    ]
   }
 ]
