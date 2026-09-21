@@ -2028,6 +2028,52 @@
     ]
   },
   {
+    "id": "idmuaizwugyiiw79",
+    "title": "I'm Blue, I'm Lonesome",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "G",
+            "G7",
+            "C",
+            "Cm"
+          ],
+          [
+            "G/E",
+            "A/D",
+            "G",
+            "G"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "D",
+            "G",
+            "A",
+            "D/D7"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "The lonesome sigh of a train going by\nMakes me want to stop and cry\nI recall the day it took you away\nI'm blue, I'm lonesome, too\n\nWhen I hear that whistle blow\nI want to pack my clothes and go\nThe lonesome sound of a train going by\nMakes me want to stop and cry\n\nIn the still of the night in the pale moonlight\nThe wind, it moan and cry\nThese lonesome blues I just can't lose\nI'm blue, I'm lonesome, too\n\nWhen I hear that whistle blow\nI want to pack my clothes and go\nThe lonesome sound of a train going by\nMakes me want to stop and cry",
+    "notes": "Written by Bill Monroe and Hank Williams, 1950",
+    "tags": [
+      "Bluegrass",
+      "Fast",
+      "Gary"
+    ],
+    "layout": {
+      "columns": "side",
+      "scale": 1.4,
+      "chordScale": 1
+    }
+  },
+  {
     "id": "idmtzcxxljvmvzua",
     "title": "I'm So Lonesome I Could Cry",
     "sections": [
