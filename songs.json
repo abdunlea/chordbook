@@ -603,6 +603,17 @@
             "G7"
           ]
         ]
+      },
+      {
+        "label": "End",
+        "rows": [
+          [
+            "C",
+            "G",
+            "F/G",
+            "C"
+          ]
+        ]
       }
     ],
     "lyrics": "Almost heaven West Virginia\nBlue Ridge Mountains  Shenandoah River\nLife is old there older than the trees\nYounger than the mountains growin’ like a breeze\n \nCountry Roads  take me home\nTo the place I belong\nWest Virginia  mountain momma\nTake me home  country roads\n \nAll my memories gathered ‘round her\nMiner’s lady  stranger to blue water\nDark and dusty  painted on the sky\nMisty taste of moonshine teardrops in my eye\n \nI hear her voice  in the mornin’ hour she calls me\nThe radio reminds me of my home far away\nAnd drivin’ down the road I get a feelin’\nThat I should have been home yesterday  yesterday\n \nTake me home  country roads\nTake me home  country roads\n",
@@ -687,7 +698,7 @@
             "D",
             "D",
             "D/A",
-            "G"
+            "D"
           ]
         ]
       },
@@ -697,7 +708,7 @@
           [
             "Bm/D",
             "Bm/D",
-            "G",
+            "D/G",
             "D"
           ],
           [
@@ -742,7 +753,11 @@
       "columns": "side",
       "scale": 1,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Abby",
+      "Country"
+    ]
   },
   {
     "id": "idmtz9vqglucocbm",
@@ -1452,7 +1467,7 @@
           [
             "C",
             "Am",
-            "F",
+            "Em",
             "Em"
           ],
           [
@@ -1516,13 +1531,14 @@
         ]
       }
     ],
-    "lyrics": "Who knows how long I've loved you\r\nYou know I love you still\r\nWill I wait a lonely lifetime\r\nIf you want me to, I will\r\n\r\nFor if I ever saw you\r\nI didn't catch your name\r\nBut it never really mattered\r\nI will always feel the same\r\n\r\nLove you forever and forever\r\nLove you with all my heart\r\nLove you whenever we're together\r\nLove you when we're apart\r\n\r\nAnd when at last I find you\r\nYour song will fill the air\r\nSing it loud so I can hear you\r\nMake it easy to be near you\r\nFor the things you do endear you to me\r\nOh, you know I will\r",
+    "lyrics": "Who knows how long I've loved you\nYou know I love you still\nWill I wait a lonely lifetime\nIf you want me to, I will\n\nFor if I ever saw you\nI didn't catch your name\nBut it never really mattered\nI will always feel the same\n\nLove you forever and forever\nLove you with all my heart\nLove you whenever we're together\nLove you when we're apart\n\nAnd when at last I find you\nYour song will fill the air\nSing it loud so I can hear you\nMake it easy to be near you\nFor the things you do endear you to me\nOh, you know I will\n",
     "notes": "",
     "layout": {
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    }
+    },
+    "tags": []
   },
   {
     "id": "idmv7dhysl1qx6p8",
@@ -2961,28 +2977,28 @@
         "label": "Verse",
         "rows": [
           [
-            "Am",
-            "Am",
-            "Dm",
-            "Dm"
-          ],
-          [
-            "Am",
-            "Am",
-            "E7",
-            "E7"
-          ],
-          [
-            "Am",
-            "Am",
-            "Dm",
-            "Dm"
-          ],
-          [
-            "Am",
-            "E7",
+            "Em",
+            "Em",
             "Am",
             "Am"
+          ],
+          [
+            "Em",
+            "Em",
+            "B7",
+            "B7"
+          ],
+          [
+            "Em",
+            "Em",
+            "Am",
+            "Am"
+          ],
+          [
+            "Em",
+            "B7",
+            "Em",
+            "Em"
           ]
         ]
       },
@@ -2990,10 +3006,16 @@
         "label": "Chorus",
         "rows": [
           [
-            "Dm",
-            "Dm",
-            "Dm",
-            "Dm"
+            "Am",
+            "Am",
+            "Am",
+            "Am"
+          ],
+          [
+            "Em",
+            "Em",
+            "Em",
+            "Em"
           ],
           [
             "Am",
@@ -3002,16 +3024,10 @@
             "Am"
           ],
           [
-            "Dm",
-            "Dm",
-            "Dm",
-            "Dm"
-          ],
-          [
-            "Am",
-            "E7",
-            "Am",
-            "Am"
+            "Em",
+            "B7",
+            "Em",
+            "Em"
           ]
         ]
       }
@@ -3022,7 +3038,11 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Abby",
+      "Bluegrass"
+    ]
   },
   {
     "id": "idmtz9vqglfotm5z",
