@@ -74,167 +74,13 @@
       }
     ],
     "lyrics": "Charlie's got a gold watch\nDon't seem like a whole lot\nAfter thirty years of driving up and down the interstate\nBut Charlie's had a good life\nAnd Charlie's got a good wife\nAnd after tonight she'll no longer be counting the days\n\nEighteen wheels and a dozen roses\nTen more miles on his four-day run\nA few more songs from the all-night radio\nThen he'll spend the rest of his life with the one that he loves\n\nThey'll buy a Winnebago\nSet out to find America\nThey'll do a lot of catching up a little at a time\nWith pieces of the old dream\nThey're gonna light the old flame\nDoing what they please, leaving every other reason behind",
-    "notes": "Recorded by Kathy Mattea in 1987. Hit #1 on country charts in 1988.",
+    "notes": "Country, Abby",
     "layout": {
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.1
     },
-    "tags": [
-      "Abby",
-      "Modern",
-      "Country",
-      "Fast"
-    ]
-  },
-  {
-    "id": "idmu2vf95grpy6kw",
-    "title": "Ain't Nobody Here But Us Chickens",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "G",
-            "G7",
-            "G7"
-          ],
-          [
-            "C",
-            "C",
-            "G7!",
-            "D7"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "G",
-            "G",
-            "G7",
-            "G7"
-          ],
-          [
-            "C",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "D",
-            "D7",
-            "G/C",
-            "G/D7"
-          ]
-        ]
-      },
-      {
-        "label": "Bridge",
-        "rows": [
-          [
-            "C",
-            "G",
-            "C",
-            "G"
-          ],
-          [
-            "A",
-            "A7",
-            "D7!",
-            "D7"
-          ]
-        ]
-      },
-      {
-        "label": "End",
-        "rows": [
-          [
-            "C",
-            "D",
-            "G",
-            "E7"
-          ],
-          [
-            "C",
-            "D",
-            "G",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "One night farmer Brown was takin' the air\nLocked up the barnyard with the greatest of care\nDown in the hen house, somethin' stirred\nWhen he shouted, \"Who's there?\"\nThis is what he heard\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nSo calm yourself, and stop that fuss\nThere ain't nobody here but us\nWe chickens tryin' to sleep and you bust in\nAnd hobble hobble hobble hobble with your chin\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nYou're stompin' around and shakin' the ground\nYou're kickin' up an awful fuss\nWe chickens tryin' to sleep and you bust in\nAnd hobble, hobble hobble hobble, it's a sin\n\nTomorrow is a busy day\nWe got things to do, we got eggs to lay\nWe got ground to dig and worms to scratch\nIt takes a lot of settin', gettin' chicks to hatch\n\nThere ain't nobody here but us chickens\nThere ain't nobody here at all\nSo quiet yourself, and stop that fuss\nThere ain't nobody here at all\nKindly point that yourself the other way\nAnd hobble, hobble, hobble and hit the hay\n",
-    "notes": "Louis Jordan and his Tympany Five recorded the song on June 26, 1946",
-    "tags": [
-      "Blues",
-      "Kim",
-      "Fast"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.1,
-      "chordScale": 1.2
-    }
-  },
-  {
-    "id": "idmu30ywmc9xxhhu",
-    "title": "Angeline the Baker",
-    "sections": [
-      {
-        "label": "Vamp D to start",
-        "rows": [
-          [
-            "D",
-            "D",
-            "D",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "D/A",
-            "D"
-          ],
-          [
-            "",
-            "",
-            "",
-            "x2"
-          ]
-        ]
-      },
-      {
-        "label": "Part B",
-        "rows": [
-          [
-            "D",
-            "C",
-            "G",
-            "D"
-          ],
-          [
-            "D",
-            "C",
-            "G",
-            "A!"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "",
-    "notes": "",
-    "tags": [
-      "Fiddle Tune",
-      "Kim"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1,
-      "chordScale": 2.2
-    }
+    "tags": []
   },
   {
     "id": "idmtz9vqgl8pr3gp",
@@ -277,7 +123,7 @@
       }
     ],
     "lyrics": "April, come she will\nWhen streams are ripe and swelled with rain\nMay, she will stay\nResting in my arms again\nJune, she'll change her tune\nIn restless walks she'll prowl the night\nJuly, she will fly\nAnd give no warning to her flight\nAugust, die she must\nThe autumn winds blow chilly and cold\nSeptember, I remember\nA love once new has now grown old\n",
-    "notes": "Simon and Garfunkel 1966. Based on the English Folk Tune about the Cuckoo bird.",
+    "notes": "",
     "layout": {
       "columns": "auto",
       "scale": 1.4,
@@ -285,8 +131,7 @@
     },
     "tags": [
       "Folk",
-      "Abby",
-      "Slow"
+      "Abby"
     ]
   },
   {
@@ -315,7 +160,7 @@
         "rows": [
           [
             "F",
-            "D",
+            "F",
             "G",
             "G"
           ],
@@ -327,7 +172,7 @@
           ],
           [
             "F",
-            "D",
+            "F",
             "G",
             "F"
           ],
@@ -358,16 +203,13 @@
       }
     ],
     "lyrics": "She went back to Wichita\nShe went back to her ma and pa\nReckon I saw her next to my truck\nPumping gas with the car packed up.\n\nWe talked as neighbors will\nThere waiting for the tanks to fill\nWe talked about nothing\nhow it might snow\nHow far she had to go\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.\n\nShe came in ’85\nShe came here as a July bride\nBut it never got easy\nnever got rich\nAin’t got much but what she came here with.\n\nGood times have all been spent\nShe ain’t broken but she’s badly bent\nThere’s nothing she wants here\nnothing that shines\nShe’s made up her mind.\n\nShe says for all my time\nwell I ain’t got much to show\nYou can tell that man of mine and anyone who wants to know\n\nGoing back where the grass grows tall\nAnd the fields burn in the fall\nYou can still hear the night birds call\nBack in Wichita.\n",
-    "notes": "Gillian Welch ‧ 2002",
+    "notes": "",
     "layout": {
       "columns": "side",
       "scale": 1,
       "chordScale": 1.8
     },
-    "tags": [
-      "Country",
-      "Kim"
-    ]
+    "tags": []
   },
   {
     "id": "idmtzer0b4z27vc6",
@@ -409,7 +251,7 @@
       }
     ],
     "lyrics": "They paved paradise\nPut up a parking lot\nWith a pink hotel, a boutique\nAnd a swinging hot spot\n\nDon't it always seem to go\nThat you don't know what you've got 'til it's gone?\nThey paved paradise\nPut up a parking lot\n\nThey took all the trees\nPut 'em in a tree museum\nThen they charged the people\nA dollar and a half just to see 'em\n\nHey, farmer, farmer\nPut away that DDT now\nGive me spots on my apples\nBut leave me the birds and the bees\n\nLate last night I heard the screen door slam\nAnd a big yellow taxi took away my old man",
-    "notes": "1970 Joni Mitchell",
+    "notes": "",
     "layout": {
       "columns": "side",
       "scale": 1.4,
@@ -417,8 +259,7 @@
     },
     "tags": [
       "Folk",
-      "Abby",
-      "Fast"
+      "Abby"
     ]
   },
   {
@@ -444,18 +285,12 @@
       }
     ],
     "lyrics": "There’s a well beaten path in the old mountainside\nWhere I wandered when I was a lad\nAnd I wandered alone to the place I call home\nIn those Blueridge hills far away\n\n   Oh I love those hills of old Virginia\n   From those Blueridge hills I did roam\n   When I die won’t you bury me on the mountain\n   Far away near my Blueridge mountain home\n\nNow my thoughts wander back to that ramshackle shack\nIn those blue ridge hills far away\nWhere my mother and dad were laid there to rest\nThey are sleeping in peace together there\n\nI return to that old cabin home with the sigh\nI’ve been longing for days gone by\nWhen I die won’t you bury me on that old mountain side\nMake my resting place upon the hills so high",
-    "notes": "Blueridge Cabin Home, written by Flatt and Scruggs 1955",
+    "notes": "",
     "layout": {
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.5
-    },
-    "tags": [
-      "Abby",
-      "Slow",
-      "Mountain",
-      "Bluegrass"
-    ]
+    }
   },
   {
     "id": "idmtzdrrnlz09e7u",
@@ -561,7 +396,7 @@
       }
     ],
     "lyrics": "\nCalm that wicked wind to pick you up and carry you off eastward\nThough I did release you for to seek a warmer sky\nShould you be blown back know that I will always run to greet you\nStill surprised to catch you every time\n\nArmed with this small butterfly net only\nI will face the world alone and never be lonely\nSo calm that wicked wind and if you go, you could be gone forever\nI will wait a while here by and by and by and by\n\nUp and up you go for to steal the secrets of the heavens\nWill you share them with me my bright and brilliant spy?\nShould you be blown back know that I will always run to greet you\nStill surprised to catch you every time\n\nStill surprised to catch you by and by and by and by",
-    "notes": "Bishop Allen, 2006",
+    "notes": "",
     "layout": {
       "columns": "side",
       "scale": 1.3,
@@ -570,8 +405,7 @@
     "tags": [
       "Folk",
       "Modern",
-      "Abby",
-      "Slow"
+      "Abby"
     ]
   },
   {
@@ -633,108 +467,8 @@
     },
     "tags": [
       "Kim",
-      "Original",
-      "Blues",
-      "Fast"
+      "Original"
     ]
-  },
-  {
-    "id": "idmu25qetibs5d06",
-    "title": "Chasin' away the Blues",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "C7",
-            "G",
-            "G7"
-          ],
-          [
-            "C",
-            "C7",
-            "G",
-            "G"
-          ],
-          [
-            "D7",
-            "C7",
-            "G",
-            "D7"
-          ]
-        ]
-      },
-      {
-        "label": "End",
-        "rows": [
-          [
-            "D7",
-            "C7!",
-            "G",
-            "*G*"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "My feet are tired...[                    ]",
-    "notes": "",
-    "tags": [
-      "Original",
-      "Kim",
-      "Blues",
-      "Fast"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1,
-      "chordScale": 1.5
-    }
-  },
-  {
-    "id": "idmu2vmxn8l4caq2",
-    "title": "Choo Choo Ch'Boogie",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "G",
-            "C7",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "G",
-            "G"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "C7",
-            "G",
-            "C7",
-            "D"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "Headin' for the station with a pack on my back\nTired of transportation in the back of a hack\nI love to hear the rhythm of the clickety-clack\nHear the lonesome whistle, see the smoke from the stack\nPal around with Democratic fellows named Mac\nTake me right back to the track, Jack\n\nChoo choo, choo choo ch'boogie\nWoo woo, woo woo ch'boogie\nChoo choo, choo choo ch'boogie\nTake me right back to the track, Jack\n\nYou reach your destination but alas in a lack\nYou need some compensation to get back in the black\nYou take a morning paper from the top of the rack\nAnd read the situation from the front to the back\nThe only job that's open needs a man with a knack\nYou put it right back in the rack, Jack\n\nGonna settle down by the railroad track\nLive the life of Riley in the beaten-down shack\nSo when I hear the whistle I can peep through the crack\nAnd watch the train a-rollin' when it's ballin' the jack\nI just love the rhythm of the clickety-clack\nTake me right back to the track, Jack",
-    "notes": "January 1946 by Louis Jordan & His Tympany Five",
-    "tags": [
-      "Gary",
-      "Blues"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.2,
-      "chordScale": 1.1
-    }
   },
   {
     "id": "idmtz9vqgloe5f70",
@@ -849,125 +583,6 @@
       "Country",
       "Folk"
     ]
-  },
-  {
-    "id": "idmu25dwtzltl57i",
-    "title": "Crooked Jack",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "Am",
-            "Am",
-            "C",
-            "G"
-          ],
-          [
-            "Am",
-            "Am",
-            "G",
-            "G"
-          ],
-          [
-            "Am",
-            "Am",
-            "C",
-            "G"
-          ],
-          [
-            "Am",
-            "G",
-            "Am",
-            "Am"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "C",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "Am",
-            "Am",
-            "Em",
-            "Em"
-          ],
-          [
-            "Am",
-            "Am",
-            "C",
-            "G..."
-          ],
-          [
-            "Am",
-            "G",
-            "Am",
-            "Am"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "Come Irishmen both young and old\nWith adventure in your soul\nThere are better ways to spend your days\nThan workin' down a hole\n\nI curse the day I went away\nTo work on those hydro dams\nAll our sweat and tears, our hopes and fears\nBound up with shuttering jams\n\nI was tall and true, all of six-foot-two\n'Til they broke me across my back\nBy a name I'm known and it's not my own\nThey call me Crooked Jack\n\nAnd I've seen old men before their time\nTheir faces drawn and gray\nBut I ain't never thought so soon would mine\nBe lined in that self same way\n\nAnd I was tall and true, all of six-foot-two\nBut they broke me across the back\nAnd by a name I'm known, it's not my own\nThey call me Crooked Jack\n\nThey say that honest toil is good\nFor the body and the soul\nBut believe me boys, it's for sweat and blood\nThat they want you down a hole",
-    "notes": "Two hard beats per chord",
-    "tags": [
-      "Irish"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.1,
-      "chordScale": 1.3
-    }
-  },
-  {
-    "id": "idmu260srymha49r",
-    "title": "Deep Ellum Blues",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "D",
-            "D",
-            "D",
-            "D7"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "G",
-            "G",
-            "D",
-            "D"
-          ],
-          [
-            "A",
-            "A7",
-            "A7/G",
-            "D"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "When you go down in Deep Elem\nJust to have a little fun\nBetter have fifteen dollars\nWhen that policeman come\n\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n   Oh sweet mama\n   Daddy’s got them Deep Elem blues\n\nWhen you go down in Deep Elem\nPut you money in your pants\nThose Deep Elem women\nThey don’t give a man a chance\n\nWhen you go down to Deep Elem\nPut your money in your socks\nThem Deep Elem women\nThey will throw you on the rocks\n\nI used to know a preacher\nPreached the bible through and through\nHe went down to Deep Elem\nGot them Deep Elem blues\n\nNow once I had a sweetheart\nMeant the world to me\nWent down to Deep Elem\nShe ain’t what she used to be",
-    "notes": "",
-    "tags": [
-      "Blues",
-      "Fast"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.2,
-      "chordScale": 1.5
-    }
   },
   {
     "id": "idmtz9vqglpons3q",
@@ -1093,11 +708,7 @@
       "columns": "side",
       "scale": 1,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglucocbm",
@@ -1115,7 +726,7 @@
           [
             "G",
             "G",
-            "A",
+            "D",
             "A"
           ],
           [
@@ -1214,12 +825,7 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.4
-    },
-    "tags": [
-      "Abby",
-      "Blues",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl1adowr",
@@ -1278,11 +884,7 @@
       "columns": "auto",
       "scale": 1.4,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Slow"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglssjenz",
@@ -1332,8 +934,7 @@
     },
     "tags": [
       "Kim",
-      "Fiddle Tune",
-      "Fast"
+      "Fiddle Tune"
     ]
   },
   {
@@ -1379,56 +980,8 @@
     },
     "tags": [
       "Abby",
-      "Bluegrass",
-      "Slow",
-      "Mountain"
+      "Bluegrass"
     ]
-  },
-  {
-    "id": "idmu31b5br8y2alx",
-    "title": "Go Rest High on that Mountain",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "C",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "C",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "G",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "I know your life on earth was troubled\nAnd only you could know the pain\nYou weren't afraid to face the devil\nYou were no stranger to the rain\n\nSo go rest high on that mountain\nSon, your work on earth is done\nGo to heaven a-shoutin'\nLove for the Father and the Son\n\nOh, how we cried the day you left us\nWe gathered round your grave to grieve\nWish I could see the angels’ faces\nWhen they hear your sweet voice sing",
-    "notes": "Vince Gill 1995",
-    "tags": [
-      "Bluegrass",
-      "Church"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.6,
-      "chordScale": 1.1
-    }
   },
   {
     "id": "idmtz9vqglqo6g2r",
@@ -1499,8 +1052,7 @@
     },
     "tags": [
       "Abby",
-      "Original",
-      "Fast"
+      "Original"
     ]
   },
   {
@@ -1548,11 +1100,7 @@
       "columns": "auto",
       "scale": 1.3,
       "chordScale": 1
-    },
-    "tags": [
-      "Country",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl24vpbe",
@@ -1623,14 +1171,7 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.4
-    },
-    "tags": [
-      "Abby",
-      "Folk",
-      "Slow",
-      "Mountain",
-      "Church"
-    ]
+    }
   },
   {
     "id": "idmtzefoks5khqiy",
@@ -1677,74 +1218,6 @@
       "columns": "auto",
       "scale": 1.3,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Blues"
-    ]
-  },
-  {
-    "id": "idmu25kogqixa1pz",
-    "title": "Heaven's Just a Sin Away",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "D",
-            "D",
-            "G",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "E",
-            "A"
-          ],
-          [
-            "D",
-            "D",
-            "G",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "A",
-            "D"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "G",
-            "G",
-            "D",
-            "D"
-          ],
-          [
-            "G",
-            "G",
-            "A",
-            "A"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "Heaven's just a sin away oh, whoa\nJust a sin away\nI can't wait another day\nI think I'm givin' in\n\nThough I'd love to hold you tight\nOh, whoa and Be with you tonight\nBut that still won't make it right\n'cause I belong to him\n\nOh, way down deep inside\nI know that it's all wrong\nYour eyes keep tempting me\nAnd I never was that strong- ong\n\nOh, devil's got me now\nOh, whoa gone and got me now\nI can't fight him anyhow\nI think he's gonna win\n\nHeaven's just a sin away\nOh, whoa\nJust a sin away\nHeaven help me when I say\nI think I'm givin' in ",
-    "notes": "",
-    "tags": [
-      "Country",
-      "Fast"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.5,
-      "chordScale": 1.2
     }
   },
   {
@@ -1827,63 +1300,6 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Fast"
-    ]
-  },
-  {
-    "id": "idmu25gu60jk57mb",
-    "title": "How Mountain Girls Can Love",
-    "sections": [
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "D",
-            "A",
-            "E",
-            "A"
-          ],
-          [
-            "D",
-            "A",
-            "E",
-            "A"
-          ]
-        ]
-      },
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "A",
-            "A",
-            "E",
-            "A"
-          ],
-          [
-            "A",
-            "A",
-            "E",
-            "A"
-          ]
-        ]
-      }
-    ],
-    "lyrics": " Get down boys, go back home\n   Back to the girl you love\n   Treat her right, never wrong\n   How mountain girls can love\n\nRiding the night in the high cold winds\nOn the trail of the old lonesome pine\nThinking of you, feeling so blue\nWondering why you left me behind\n\nRemember the night we strolled down the lane\nOur hearts were much happier then\nYou whispered to me as I held you close\nYou hoped this night would never end",
-    "notes": "",
-    "tags": [
-      "Bluegrass",
-      "Fast",
-      "Mountain"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.6,
-      "chordScale": 1
     }
   },
   {
@@ -1926,13 +1342,7 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.4
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Blues",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgljhguh4",
@@ -2014,62 +1424,11 @@
         ]
       }
     ],
-    "lyrics": "Who knows how long I've loved you\nYou know I love you still\nWill I wait a lonely lifetime\nIf you want me to, I will\n\nFor if I ever saw you\nI didn't catch your name\nBut it never really mattered\nI will always feel the same\n\nLove you forever and forever\nLove you with all my heart\nLove you whenever we're together\nLove you when we're apart\n\nAnd when at last I find you\nYour song will fill the air\nSing it loud so I can hear you\nMake it easy to be near you\nFor the things you do endear you to me\nOh, you know I will\n",
+    "lyrics": "Who knows how long I've loved you\r\nYou know I love you still\r\nWill I wait a lonely lifetime\r\nIf you want me to, I will\r\n\r\nFor if I ever saw you\r\nI didn't catch your name\r\nBut it never really mattered\r\nI will always feel the same\r\n\r\nLove you forever and forever\r\nLove you with all my heart\r\nLove you whenever we're together\r\nLove you when we're apart\r\n\r\nAnd when at last I find you\r\nYour song will fill the air\r\nSing it loud so I can hear you\r\nMake it easy to be near you\r\nFor the things you do endear you to me\r\nOh, you know I will\r",
     "notes": "",
     "layout": {
       "columns": "auto",
       "scale": 1,
-      "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Slow",
-      "Modern"
-    ]
-  },
-  {
-    "id": "idmuaizwugyiiw79",
-    "title": "I'm Blue, I'm Lonesome",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "G7",
-            "C",
-            "Cm"
-          ],
-          [
-            "G/E",
-            "A/D",
-            "G",
-            "G"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "D",
-            "G",
-            "A",
-            "D/D7"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "The lonesome sigh of a train going by\nMakes me want to stop and cry\nI recall the day it took you away\nI'm blue, I'm lonesome, too\n\nWhen I hear that whistle blow\nI want to pack my clothes and go\nThe lonesome sound of a train going by\nMakes me want to stop and cry\n\nIn the still of the night in the pale moonlight\nThe wind, it moan and cry\nThese lonesome blues I just can't lose\nI'm blue, I'm lonesome, too\n\nWhen I hear that whistle blow\nI want to pack my clothes and go\nThe lonesome sound of a train going by\nMakes me want to stop and cry",
-    "notes": "Written by Bill Monroe and Hank Williams, 1950",
-    "tags": [
-      "Bluegrass",
-      "Fast",
-      "Gary"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.4,
       "chordScale": 1
     }
   },
@@ -2113,12 +1472,7 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Country",
-      "Slow",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtzbv1rmvvxusb",
@@ -2166,16 +1520,12 @@
       }
     ],
     "lyrics": "Born in the mountain\nFifty years ago\nTrod the hills and valleys\nThrough the rain and snow\nSeen the lightning flashing\nI've heard thunder roll\n\nI've endured\nI've endured\nHow long can one endure?\n\nBarefoot in the summer\nOn into the fall\nToo many mouths to feed\nThey couldn't clothe us all\nSent to church on Sunday\nTo learn the golden rule...\n\nI've worked for the rich\nI've lived with the poor\nI've seen many a heartache\nThere'll be many more\nI've lived, loved, and sorrowed\nBeen to success's door...",
-    "notes": "Written by Ola Belle Reed. Covered by Del McCoury in 1970",
+    "notes": "",
     "layout": {
       "columns": "side",
-      "scale": 1.5,
-      "chordScale": 1.3
-    },
-    "tags": [
-      "Kim",
-      "Mountain"
-    ]
+      "scale": 1.4,
+      "chordScale": 1
+    }
   },
   {
     "id": "idmtz9vqglt5ohdw",
@@ -2263,90 +1613,6 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Abby",
-      "Folk",
-      "Fast"
-    ]
-  },
-  {
-    "id": "idmu25wfmgwvjdgp",
-    "title": "If you've got the money honey",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "C",
-            "C",
-            "C",
-            "C"
-          ],
-          [
-            "C",
-            "C",
-            "C",
-            "F"
-          ],
-          [
-            "G",
-            "G",
-            "G",
-            "G"
-          ],
-          [
-            "G",
-            "G",
-            "G",
-            "C"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "If you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nWe'll make all the night spots, dance, drink beer and wine\nIf you've got the money, honey, I've got the time\n\nThere ain't no use to tarry, so let's start out tonight\nWe'll spread joy, oh boy, oh boy, and we'll spread it right\nWe'll have more fun, baby, all the way down the line\nIf you've got the money, honey, I've got the time\n\nIf you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nBring along your Cadillac, leave my old wreck behind\nIf you've got the money, honey, I've got the time\n\nIf you've got the money, I've got the time\nWe'll go honky tonkin' and we'll have a time\nBut if you run short of money, I'll run short of time\n'Cause you with no more money, honey, I've no more time",
-    "notes": "",
-    "tags": [
-      "Country",
-      "Fast"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1.4,
-      "chordScale": 1
-    }
-  },
-  {
-    "id": "idmu25o3o483cvo8",
-    "title": "It Rains Everywhere I Go",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "C",
-            "F/C",
-            "F",
-            "G7"
-          ],
-          [
-            "C",
-            "F/C",
-            "Am/G7",
-            "C"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "The sun used to always shine\nWhen love was here when you were mine\nThe weather always looked so fine\nNow it rains everywhere I go\n\nI thought I had the perfect love\nBlue skies and stars above\nThat's the way it is when you're in love\nNow it rains everywhere I go\n\nIt rains everywhere I go\nThe storms appear and the winds they blow\nI got nothing but trouble to show\n'Cause it rains everywhere I go\n\nI never saw a cloudy day\nUntil the day you went away\nA black cloud came to stay\nIt's been raining on me every day\n\nThey say the sun will shine again\nWell I'll believe it but I don't know when\nI guess I'll stay inside 'til then\n'Cause it rains everywhere I go",
-    "notes": "",
-    "tags": [
-      "Country"
-    ],
-    "layout": {
-      "columns": 2,
-      "scale": 1.3,
-      "chordScale": 1.6
     }
   },
   {
@@ -2418,12 +1684,7 @@
       "columns": "side",
       "scale": 1.1,
       "chordScale": 1.5
-    },
-    "tags": [
-      "Abby",
-      "Bluegrass",
-      "Church"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgltdrqc2",
@@ -2470,10 +1731,7 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 2.2
-    },
-    "tags": [
-      "Fiddle Tune"
-    ]
+    }
   },
   {
     "id": "idmtzctkm9oi8ho0",
@@ -2555,72 +1813,6 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.1
-    },
-    "tags": [
-      "Abby",
-      "Folk",
-      "Slow"
-    ]
-  },
-  {
-    "id": "idmu2unuwiu0rywl",
-    "title": "Leatherwing Bat",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "Am",
-            "C"
-          ],
-          [
-            "G",
-            "Em"
-          ],
-          [
-            "Am",
-            "Am/G..."
-          ],
-          [
-            "E",
-            "Am"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "F",
-            "C"
-          ],
-          [
-            "G",
-            "Am"
-          ],
-          [
-            "F",
-            "C/Am..."
-          ],
-          [
-            "(Am/Em",
-            "Am) x2"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "\"I\" said the little leatherwing bat\n\"I'll tell to you the reason that\nThe reason that I fly by night\nIs because I've lost my heart's delight.\"\n\nHowdy dowdy diddle-dum day\nHowdy dowdy diddle-dum day\nHowdy dowdy diddle-dum day\nHey di-lee di-li di-lo\n\n\"I\" said the blackbird sittin' on a chair\n\"Once I courted a lady, fair\nShe proved fickle and turned her back\nAnd ever since then I've dressed in black.\"\n\n\"I\" said the woodpecker sittin' on a fence\n\"Once I courted a handsome wench\nShe got scared and from me fled\nAnd ever since then my head's been red.\"\n\n\"I\" said the little turtle dove\n\"I'll tell you how to win her love\nCourt her night and court her day\nNever give her reason to say o-neigh!\"",
-    "notes": "\"The Bird Courting Song\" dates back to 17th century England. It migrated to Appalachia and was later recorded by many folk artists such as Burl Ives, Pete Seeger, and the Muppets. Our version is the one by Peter, Paul, and Mary",
-    "tags": [
-      "Fast",
-      "Folk",
-      "Kim",
-      "Mountain"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.3,
-      "chordScale": 1
     }
   },
   {
@@ -2668,109 +1860,6 @@
       "columns": "side",
       "scale": 1,
       "chordScale": 1.5
-    },
-    "tags": [
-      "Country",
-      "Fast",
-      "Modern"
-    ]
-  },
-  {
-    "id": "idmu3173rk2f2uy6",
-    "title": "Little Mountain Church House",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "G",
-            "C",
-            "C"
-          ],
-          [
-            "G",
-            "G",
-            "D",
-            "D"
-          ],
-          [
-            "G",
-            "G",
-            "C",
-            "C"
-          ],
-          [
-            "G",
-            "D",
-            "G",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "There's a little mountain church in my thoughts of yesterday\nWhere friends and family gathered for the Lord\nWhere an ol' fashioned preacher taught the straight and narrow way\nFor what few coins the congregation could afford\n\nDressed in all our Sunday best, we sat on pews of solid oak\nAnd I remember how our voices filled the air\nHow Mama sounded like an angel on those high soprano notes\nAnd \"When the Roll is Called Up Yonder I'll Be There\"\n\nLooking back now that little mountain church house\nHas become my lifes cornerstone\nIt was there in that little mountain church house\nI first heard the words I based my life upon\n\nAt the all day Sunday singing, with dinner on the ground\nMany were the souls that were revived\nWhile the brothers and the sisters who've gone on to Gloryland\nSlept in peace in the maple grove nearby",
-    "notes": "",
-    "tags": [
-      "Bluegrass",
-      "Abby",
-      "Church"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1.4,
-      "chordScale": 1.1
-    }
-  },
-  {
-    "id": "idmu2v1ljw4esgpe",
-    "title": "Lonesome John",
-    "sections": [
-      {
-        "label": "Part A",
-        "rows": [
-          [
-            "Am",
-            "Am",
-            "Am",
-            "G"
-          ],
-          [
-            "Am",
-            "Am",
-            "Am/G",
-            "Am"
-          ]
-        ]
-      },
-      {
-        "label": "Part B",
-        "rows": [
-          [
-            "Am",
-            "Am",
-            "Am",
-            "G"
-          ],
-          [
-            "Am",
-            "Dm",
-            "Am/G",
-            "Am"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "",
-    "notes": "",
-    "tags": [
-      "Fiddle Tune",
-      "Kim"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1,
-      "chordScale": 2.2
     }
   },
   {
@@ -2801,45 +1890,6 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
-    },
-    "tags": [
-      "Kim",
-      "Mountain"
-    ]
-  },
-  {
-    "id": "idmu2vuy2cw44gln",
-    "title": "Lost River",
-    "sections": [
-      {
-        "label": "Verse + Chorus",
-        "rows": [
-          [
-            "G",
-            "G",
-            "C",
-            "G"
-          ],
-          [
-            "D7",
-            "C",
-            "D7",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "There's a lost river that flows in a valley where no one goes,\nWhere the wild water's rush rumbles deep in the hush.\nI'm gone far from there now, but I'll be back somehow\nTo where the lost river winds in the shadow of the pines\n\nOh, lost river, now I'm coming back\nTo the pot-belly stove, where the firewood's all stacked\nOh Quebec girl, go with me, my bell, my fleur de lis,\nWhere the lost river winds in the shadow of the pines\n\nNow every body knows where that lost river flows\nIt's someplace he's lost behind bridges that he's crossed\nWell, he'd like to return, but his bridges are all burned\nAnd he's much too far down to return to higher ground\n\nOh lost river, far over the ridge\nNow is it too late for me to build me a new bridge?\nTo the bright golden time when her love was still mine\nAnd the world was still wild like the heart of a child",
-    "notes": "The song \"Lost River\" was written by Michael Martin Murphey in 1982. Covered by the Nitty Gritty Dirt Band 1989.",
-    "tags": [
-      "Bluegrass",
-      "Modern",
-      "Abby"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1.3,
-      "chordScale": 1.6
     }
   },
   {
@@ -2920,85 +1970,6 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    },
-    "tags": [
-      "Original",
-      "Blues",
-      "Kim"
-    ]
-  },
-  {
-    "id": "idmu312y5bq1s2gh",
-    "title": "Mama Tried",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "D",
-            "G",
-            "D",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "A",
-            "A"
-          ],
-          [
-            "D",
-            "G",
-            "D",
-            "G"
-          ],
-          [
-            "D",
-            "A",
-            "D",
-            "D"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "D/G/D",
-            "G",
-            "D",
-            "D"
-          ],
-          [
-            "Bm",
-            "Bm",
-            "A",
-            "A"
-          ],
-          [
-            "D/G/D",
-            "G",
-            "D",
-            "D"
-          ],
-          [
-            "D",
-            "A",
-            "A",
-            "A"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "The first thing I remember knowin'\nWas a lonesome whistle blowin'\nAnd a young'n's dream of growing up to ride\nOn a freight train leaving town\nNot knowing where I'm bound\nAnd no one could change my mind, but mama tried\n\nA one and only rebel child\nFrom a family meek and mild\nMy mama seemed to know what lay in store\nDespite all my Sunday learnin'\nTowards the bad I kept on turnin'\n'Til mama couldn't hold me anymore\n\nAnd I turned twenty-one in prison, doing life without parole\nNo one could steer me right, but mama tried, mama tried\nMama tried to raise me better, but her pleading I denied\nThat leaves only me to blame, 'cause mama tried\n\nDear old daddy, rest his soul\nLeft my mom a heavy load\nShe tried so very hard to fill his shoes\nWorking hours without rest\nWanted me to have the best\nShe tried to raise me right, but I refused",
-    "notes": "Merle Haggard 1968",
-    "tags": [
-      "Country"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.2,
-      "chordScale": 1
     }
   },
   {
@@ -3068,12 +2039,7 @@
       "columns": "side",
       "scale": 1.1,
       "chordScale": 1.4
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Modern"
-    ]
+    }
   },
   {
     "id": "idmtzd6pzg75n75x",
@@ -3132,44 +2098,6 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.1
-    },
-    "tags": [
-      "Blues",
-      "Kim"
-    ]
-  },
-  {
-    "id": "idmu314za6xonojs",
-    "title": "Miss Monahan",
-    "sections": [
-      {
-        "label": "Part A and Part B both",
-        "rows": [
-          [
-            "D",
-            "G",
-            "D",
-            "A/D"
-          ],
-          [
-            "D",
-            "G",
-            "D/G",
-            "A/D"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "",
-    "notes": "",
-    "tags": [
-      "Fiddle Tune",
-      "Kim"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1,
-      "chordScale": 2.2
     }
   },
   {
@@ -3193,80 +2121,6 @@
     "layout": {
       "columns": "auto",
       "scale": 1,
-      "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Fast"
-    ]
-  },
-  {
-    "id": "idmu30w6bugl0wgx",
-    "title": "Nuage",
-    "sections": [
-      {
-        "label": "Part A",
-        "rows": [
-          [
-            "Eb",
-            "Am",
-            "D7",
-            "G"
-          ],
-          [
-            "",
-            "",
-            "",
-            "x2"
-          ],
-          [
-            "B7",
-            "Em",
-            "A/Ab/A",
-            "D"
-          ]
-        ]
-      },
-      {
-        "label": "Part B",
-        "rows": [
-          [
-            "Eb",
-            "Am",
-            "D7",
-            "G"
-          ],
-          [
-            "Ab",
-            "Dm",
-            "G7",
-            "C"
-          ],
-          [
-            "Cm",
-            "Cm",
-            "G",
-            "G"
-          ],
-          [
-            "Eb",
-            "Am7",
-            "D7",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "Eb is D pitched up one half step\n\nor Eb and Ab can both be in A7 shape:\n\nEb → A7-shape, xx8889\n\nAb7 → xx1112\n\nA/Ab/A →xx2223::xx1112::xx2223\n\nCm → Bm shape half step pitched up",
-    "notes": "",
-    "tags": [
-      "Blues",
-      "Fiddle Tune"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1.5,
       "chordScale": 1
     }
   },
@@ -3350,11 +2204,7 @@
       "columns": "side",
       "scale": 1.5,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country"
-    ]
+    }
   },
   {
     "id": "idmtzc9e8ph41qv6",
@@ -3409,11 +2259,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Slow",
-      "Church"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglwzq1p0",
@@ -3455,11 +2301,7 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.6
-    },
-    "tags": [
-      "Original",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl0u0xda",
@@ -3530,11 +2372,7 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Original",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl16eoes",
@@ -3593,10 +2431,7 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 2.2
-    },
-    "tags": [
-      "Fiddle Tune"
-    ]
+    }
   },
   {
     "id": "idmtzc13t4wd3662",
@@ -3638,75 +2473,6 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Fast",
-      "Mountain"
-    ]
-  },
-  {
-    "id": "idmu2vi8d2lymzwn",
-    "title": "Red Wing",
-    "sections": [
-      {
-        "label": "Part A",
-        "rows": [
-          [
-            "G",
-            "G",
-            "C",
-            "G"
-          ],
-          [
-            "C",
-            "G",
-            "A",
-            "D"
-          ],
-          [
-            "G",
-            "G",
-            "C",
-            "G"
-          ],
-          [
-            "C",
-            "G",
-            "A/D",
-            "G"
-          ]
-        ]
-      },
-      {
-        "label": "Part B x2",
-        "rows": [
-          [
-            "C",
-            "C",
-            "G",
-            "G"
-          ],
-          [
-            "D",
-            "D",
-            "G",
-            "G"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "",
-    "notes": "",
-    "tags": [
-      "Fiddle Tune",
-      "Bluegrass",
-      "Kim"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1,
-      "chordScale": 2.2
     }
   },
   {
@@ -3737,11 +2503,7 @@
       "columns": "auto",
       "scale": 1.4,
       "chordScale": 1.6
-    },
-    "tags": [
-      "Abby",
-      "Mountain"
-    ]
+    }
   },
   {
     "id": "idmtzekcgo9wkh7t",
@@ -3811,12 +2573,7 @@
       "columns": "auto",
       "scale": 1.3,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglqmka8r",
@@ -3846,75 +2603,6 @@
       "columns": "auto",
       "scale": 1.5,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Slow",
-      "Mountain"
-    ]
-  },
-  {
-    "id": "idmu2w49lavl1fj6",
-    "title": "Someday Soon",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "G",
-            "Em",
-            "C",
-            "G"
-          ],
-          [
-            "Bm",
-            "Bm",
-            "C",
-            "D"
-          ],
-          [
-            "G",
-            "Em",
-            "C",
-            "G"
-          ],
-          [
-            "Am",
-            "D7",
-            "G",
-            "G"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "D",
-            "D",
-            "C",
-            "G"
-          ],
-          [
-            "Em",
-            "Em",
-            "A7",
-            "D7"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "There's a young man that I know, his age is twenty-one\nComes from down in southern Colorado\nJust out of the service and he's looking for his fun\nSomeday soon, going with him someday soon\n\nMy parents cannot stand him 'cause he rides the rodeo\nMy father says that he will leave me cryin'\nI would follow him right down the toughest road I know\nSomeday soon, going with him someday soon\n\nAnd when he comes to call, my pa ain't got a good word to say\nGuess it's 'cause he's just as wild in the younger days\n\nSo blow, you old blue northern, blow my love to me\nHe's driving in tonight from California\nHe loves his damned old rodeo as much as he loves me\nSomeday soon, going with him someday soon",
-    "notes": "Originally recorded by the folk duo Ian & Sylvia in 1964. Covered by Judy Collins in 1968.",
-    "tags": [
-      "Abby",
-      "Folk",
-      "Slow"
-    ],
-    "layout": {
-      "columns": "side",
-      "scale": 1.2,
-      "chordScale": 1.3
     }
   },
   {
@@ -3939,11 +2627,7 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country"
-    ]
+    }
   },
   {
     "id": "idmtzenblegg0j11",
@@ -3971,8 +2655,8 @@
             "Em/A"
           ],
           [
-            "check: G",
-            "Em",
+            "G",
+            "C",
             "Am",
             "Em"
           ]
@@ -3985,12 +2669,7 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
-    },
-    "tags": [
-      "Slow",
-      "Blues",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtzbms8myecw4g",
@@ -4031,13 +2710,7 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.5
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Folk",
-      "Slow"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl85b2v5",
@@ -4108,10 +2781,7 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Mountain"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglfotm5z",
@@ -4170,12 +2840,7 @@
       "columns": "auto",
       "scale": 1.2,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Original",
-      "Blues",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtzd8r9fglk23t",
@@ -4217,11 +2882,7 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Country"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl8y9230",
@@ -4263,10 +2924,7 @@
       "columns": "auto",
       "scale": 1.5,
       "chordScale": 1.4
-    },
-    "tags": [
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgls74d7y",
@@ -4305,10 +2963,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Mountain"
-    ]
+    }
   },
   {
     "id": "idmtzdid9lurtzw6",
@@ -4367,12 +3022,7 @@
       "columns": "side",
       "scale": 1.5,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Slow",
-      "Modern"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl93kpjq",
@@ -4443,12 +3093,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Country",
-      "Blues",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgly2mn0g",
@@ -4505,12 +3150,7 @@
       "columns": "side",
       "scale": 1.1,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Modern"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglk1lo54",
@@ -4563,13 +3203,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.6
-    },
-    "tags": [
-      "Abby",
-      "Original",
-      "Blues",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl07kr0t",
@@ -4616,11 +3250,7 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 2.2
-    },
-    "tags": [
-      "Fiddle Tune",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglrcc5vy",
@@ -4667,12 +3297,7 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Country",
-      "Blues",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtzcmb6fih0id1",
@@ -4731,12 +3356,7 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    },
-    "tags": [
-      "Country",
-      "Blues",
-      "Fast"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl51rv29",
@@ -4781,12 +3401,7 @@
       "columns": "auto",
       "scale": 1.5,
       "chordScale": 1
-    },
-    "tags": [
-      "Abby",
-      "Slow",
-      "Mountain"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl23g9xr",
@@ -4874,12 +3489,7 @@
       "columns": "side",
       "scale": 1.2,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Abby",
-      "Country",
-      "Slow"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglna7k0b",
@@ -4914,11 +3524,7 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    },
-    "tags": [
-      "Blues",
-      "Folk"
-    ]
+    }
   },
   {
     "id": "idmtz9vqglf4ku5r",
@@ -4960,13 +3566,7 @@
       "columns": 2,
       "scale": 1.2,
       "chordScale": 1.7
-    },
-    "tags": [
-      "Cajun",
-      "Blues",
-      "Fast",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl0w3fmf",
@@ -5013,12 +3613,7 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Country",
-      "Blues",
-      "Kim"
-    ]
+    }
   },
   {
     "id": "idmtz9vqgl642zzx",
@@ -5054,11 +3649,6 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.2
-    },
-    "tags": [
-      "Blues",
-      "Fast",
-      "Kim"
-    ]
+    }
   }
 ]
