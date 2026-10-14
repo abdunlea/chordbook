@@ -918,7 +918,11 @@
       "columns": "auto",
       "scale": 1.4,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Abby",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqglssjenz",
@@ -1134,7 +1138,12 @@
       "columns": "auto",
       "scale": 1.3,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Kim",
+      "Modern",
+      "Country"
+    ]
   },
   {
     "id": "idmv7dcxdtky785m",
@@ -1175,7 +1184,9 @@
     "notes": "",
     "tags": [
       "Fiddle Tune",
-      "Irish"
+      "Irish",
+      "Fast",
+      "Kim"
     ],
     "layout": {
       "columns": "auto",
@@ -1514,6 +1525,81 @@
     }
   },
   {
+    "id": "idmv7dhysl1qx6p8",
+    "title": "I'm Experienced in Heartache",
+    "sections": [
+      {
+        "label": "Verse",
+        "rows": [
+          [
+            "C",
+            "C",
+            "F",
+            "F",
+            ""
+          ],
+          [
+            "G",
+            "G",
+            "G",
+            "C",
+            "x2"
+          ]
+        ]
+      },
+      {
+        "label": "Chorus",
+        "rows": [
+          [
+            "C",
+            "C",
+            "F",
+            "F",
+            ""
+          ],
+          [
+            "G",
+            "G",
+            "C",
+            "C",
+            "x2"
+          ]
+        ]
+      },
+      {
+        "label": "Last Verse",
+        "rows": [
+          [
+            "D",
+            "D",
+            "G",
+            "G",
+            ""
+          ],
+          [
+            "A",
+            "A",
+            "D",
+            "D",
+            "x2"
+          ]
+        ]
+      }
+    ],
+    "lyrics": "There’s something you should know if you come knocking at my door\nThis old thing is broken I won’t open any more\nI used to have a key but I lost it, somewhere along the way\nNow it’s stuck and all banged up, so I just thought I’d say…\n\nI’m experienced in Heartaches, I’m from the school of let me downs, \nWhen it comes to loving, I’m the biggest fool around\nI’m experienced in Heartaches, I’ve been there a time or two, \nAnd it took some time to find my peace of mindIt ‘ll take some time with you.\n",
+    "notes": "",
+    "tags": [
+      "Original",
+      "Country",
+      "Kim"
+    ],
+    "layout": {
+      "columns": "auto",
+      "scale": 1.3,
+      "chordScale": 1.4
+    }
+  },
+  {
     "id": "idmtzcxxljvmvzua",
     "title": "I'm So Lonesome I Could Cry",
     "sections": [
@@ -1553,7 +1639,13 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1.2
-    }
+    },
+    "tags": [
+      "Original",
+      "Country",
+      "Bluegrass",
+      "Kim"
+    ]
   },
   {
     "id": "idmtzbv1rmvvxusb",
@@ -1606,7 +1698,11 @@
       "columns": "side",
       "scale": 1.4,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Bluegrass",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqglt5ohdw",
@@ -1812,7 +1908,11 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 2.2
-    }
+    },
+    "tags": [
+      "Kim",
+      "Bluegrass"
+    ]
   },
   {
     "id": "idmtzctkm9oi8ho0",
@@ -1971,7 +2071,11 @@
       "columns": "auto",
       "scale": 1.6,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Kim",
+      "Bluegrass"
+    ]
   },
   {
     "id": "idmtzcjd6e77dwok",
@@ -2051,7 +2155,12 @@
       "columns": "auto",
       "scale": 1,
       "chordScale": 1
-    }
+    },
+    "tags": [
+      "Original",
+      "Bluegrass",
+      "Kim"
+    ]
   },
   {
     "id": "idmtz9vqgl9ykdrb",
@@ -2382,7 +2491,12 @@
       "columns": "auto",
       "scale": 1.1,
       "chordScale": 1.6
-    }
+    },
+    "tags": [
+      "Kim",
+      "Bluegrass",
+      "Original"
+    ]
   },
   {
     "id": "idmtz9vqgl0u0xda",
@@ -3174,81 +3288,6 @@
       "columns": "side",
       "scale": 1.3,
       "chordScale": 1.3
-    }
-  },
-  {
-    "id": "idmv7dhysl1qx6p8",
-    "title": "Untitled",
-    "sections": [
-      {
-        "label": "Verse",
-        "rows": [
-          [
-            "C",
-            "C",
-            "F",
-            "F",
-            ""
-          ],
-          [
-            "G",
-            "G",
-            "G",
-            "C",
-            "x2"
-          ]
-        ]
-      },
-      {
-        "label": "Chorus",
-        "rows": [
-          [
-            "C",
-            "C",
-            "F",
-            "F",
-            ""
-          ],
-          [
-            "G",
-            "G",
-            "C",
-            "C",
-            "x2"
-          ]
-        ]
-      },
-      {
-        "label": "Last Verse",
-        "rows": [
-          [
-            "D",
-            "D",
-            "G",
-            "G",
-            ""
-          ],
-          [
-            "A",
-            "A",
-            "D",
-            "D",
-            "x2"
-          ]
-        ]
-      }
-    ],
-    "lyrics": "There’s something you should know if you come knocking at my door\nThis old thing is broken I won’t open any more\nI used to have a key but I lost it, somewhere along the way\nNow it’s stuck and all banged up, so I just thought I’d say…\n\nI’m experienced in Heartaches, I’m from the school of let me downs, \nWhen it comes to loving, I’m the biggest fool around\nI’m experienced in Heartaches, I’ve been there a time or two, \nAnd it took some time to find my peace of mindIt ‘ll take some time with you.\n",
-    "notes": "",
-    "tags": [
-      "Original",
-      "Country",
-      "Kim"
-    ],
-    "layout": {
-      "columns": "auto",
-      "scale": 1.3,
-      "chordScale": 1.4
     }
   },
   {
