@@ -1535,15 +1535,31 @@
             "C",
             "C",
             "F",
-            "F",
-            ""
+            "F"
           ],
           [
             "G",
             "G",
             "G",
+            "C"
+          ],
+          [
             "C",
-            "x2"
+            "C",
+            "F",
+            "F"
+          ],
+          [
+            "G",
+            "G",
+            "G",
+            "C"
+          ],
+          [
+            "**C!",
+            "",
+            "",
+            ""
           ]
         ]
       },
@@ -1554,15 +1570,31 @@
             "C",
             "C",
             "F",
-            "F",
-            ""
+            "F"
           ],
           [
             "G",
             "G",
             "C",
+            "C"
+          ],
+          [
             "C",
-            "x2"
+            "C",
+            "F",
+            "F"
+          ],
+          [
+            "G",
+            "G",
+            "G",
+            "C"
+          ],
+          [
+            "**D!",
+            "",
+            "",
+            ""
           ]
         ]
       },
@@ -1581,12 +1613,26 @@
             "A",
             "D",
             "D",
-            "x2"
+            ""
+          ],
+          [
+            "D",
+            "D",
+            "G",
+            "G",
+            ""
+          ],
+          [
+            "A",
+            "A",
+            "A",
+            "D",
+            "<-TA"
           ]
         ]
       }
     ],
-    "lyrics": "There’s something you should know if you come knocking at my door\nThis old thing is broken I won’t open any more\nI used to have a key but I lost it, somewhere along the way\nNow it’s stuck and all banged up, so I just thought I’d say…\n\nI’m experienced in Heartaches, I’m from the school of let me downs, \nWhen it comes to loving, I’m the biggest fool around\nI’m experienced in Heartaches, I’ve been there a time or two, \nAnd it took some time to find my peace of mindIt ‘ll take some time with you.\n",
+    "lyrics": "There’s something you should know if you come knocking at my door\nThis old thing is broken I won’t open any more\nI used to have a key but I lost it, somewhere along the way\nNow it’s stuck and all banged up, so I just thought I’d say…\n\nI’m experienced in Heartaches, I’m from the school of let me downs, \nWhen it comes to loving, I’m the biggest fool around\nI’m experienced in Heartaches, I’ve been there a time or two, \nAnd it took some time to find my peace of mind\nIt ‘ll take some time with you.\n",
     "notes": "",
     "tags": [
       "Original",
@@ -1594,9 +1640,9 @@
       "Kim"
     ],
     "layout": {
-      "columns": "auto",
+      "columns": "side",
       "scale": 1.3,
-      "chordScale": 1.4
+      "chordScale": 1.1
     }
   },
   {
